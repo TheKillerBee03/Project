@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div ></div>
+</body>
+<script>
+    const time = document.getElementById('timer');
+    const start = document.getElementById('gamestart');
+    let seconds = 0, minutes = 0;
+
+    const timeGenerator = () => {
+        seconds+= 1;
+        if(minutes => 60){
+            minutes+= 1;
+            seconds = 0;
+        }
+        let secondsValue = seconds < 10 ? `0${seconds}` : seconds;
+        let minutesValue = minutes < 10 ? `0${minutes}` : minutes;
+        time.innerHTML = `<span> Time: </span> ${secondsValue}: ${minutesValue}`;
+    };
+
+</script>
+</html>

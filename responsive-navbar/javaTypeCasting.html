@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <nav>
+        <ul>
+            <div class="menu-button" onclick=showNav()><a style="display: flex; justify-content: flex-start;"><svg xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 96 960 960" width="28"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></div>
+        
+        <ul>
+        <!-- <div onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26" style="fill: white;"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></div> -->
+        <li ><a href="index.html">Home</a></li>
+      <li class="hideOnMobile"><a href="lesson.html">Lesson</a></li>
+      <li class="hideOnMobile"><a href="#">Quiz</a></li>
+      <li class="hideOnMobile"><a href="#">Games</a></li>
+      <li class="hideOnMobile"><a href="#">About</a></li>
+    </ul>
+    </ul>
+    </nav>
+     <div class="sidenav">
+        <div onclick=hideNav() ><a style="padding-left: 5px;"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26" style="fill: white;"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></div>
+        <h2>Java Lesson</h2>
+    <a href="lesson.html">Java HOME</a>
+    <a href="intro.html">Java Intro</a>
+    <a href="getStarted.html">Java Get Started</a>
+    <a href="syntax.html">Java Syntax</a>
+    <a href="outputPrint.html">Java Output</a>
+    <a href="outputPrintNum.html">Java Output/Print</a>
+    <a href="#">Java Comments</a>
+    <a href="#">Java Variables</a>
+    <a href="#">Java Data Types</a>
+    <a href="#">Java Type Casting</a>
+    <a href="#">Java Operators</a>
+    <a href="#">Java Strings</a>
+    <a href="#">Java Math</a>
+    <a href="#">Java Booleans</a>
+    <a href="#">Java If...Else</a>
+    <a href="#">Java Switch</a>
+    <a href="#">Java While Loop</a>
+    <a href="#">Java For Loop</a>
+    <a href="#">Java Break/Continue</a>
+    <a href="#">Java Arrays</a>
+    
+    </div> 
+    <h4 class="lessonh4">Java Type Casting</h4>
+    
+    
+    <div class="cen">
+        <h4 id="h">Java Type Casting</h4>
+        <p>Type casting is when you assign a value of one primitive data type to another type.</p>
+        <p>In Java, there are two types of casting:</p>
+        <ul>
+            <li><b>Narrowing Casting</b> (automatically) - converting a smaller type to a larger type size <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>byte</code> -> <code>short</code> -> <code>char</code> -> <code>int</code> -> <code>long</code> -> <code>float</code> -> <code>double</code></li>
+            <li><b>Widening Casting</b> (manually) - converting a larger type to a smaller type size <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>byte</code> -> <code>short</code> -> <code>char</code> -> <code>int</code> -> <code>long</code> -> <code>float</code> -> <code>double</code></li>
+        </ul>
+
+    </div>
+    
+    
+    <div class="cens">
+        <h4 id="h">Widening Casting</h4>
+        <p>Widening casting is done automatically when passing a smaller size type to a larger size type:</p>
+        
+        
+    </div>
+
+    <div class="cens">
+        
+        <h4 id="e">Example</h4>
+       
+        <div class="cent">
+            <code>
+                
+                
+                <span class="keywordpublic2">public</span>
+                <span class="keywordpublic2">class</span>
+                <span class="keywordmain">Main</span>
+                <span class="keywordbrace">{</span>
+                <br>
+                <span class="keywordpublic2">&nbsp;&nbsp;&nbsp;public</span>
+                <span class="keywordpublic2">static</span>
+                <span class="keywordpublic2">void</span>
+                <span class="keywordmain">main</span><span class="keywordbrace">(</span><span class="keywordmain">String</span>
+                <span class="keywordbrace">[]</span>
+                <span>args</span><span class="keywordbrace">)</span>
+                <span class="keywordbrace">{</span>
+                <br>
+                
+                <span class="keywordpublic2">&nbsp;&nbsp;&nbsp;int</span>
+                <span>myInt</span>
+                <span class="keywordbrace">=</span>
+                <span class="keywordprint">9;</span>
+                <br>
+                <span class="keywordpublic2">&nbsp;&nbsp;&nbsp;double</span>
+                <span>myDouble</span>
+                <span class="keywordbrace">=</span>
+                <span>myInt</span>
+                <span class="keywordpublic2">// Automatic casting: int to double</span>
+                <br>
+                <br>
+                <span class="keywordmain">&nbsp;&nbsp;&nbsp;System</span>.out.<span class="keywordpublic2">println</span><span class="keywordbrace">(</span><span>myInt</span><span class="keywordbrace">)</span>;
+                <span class="keywordpublic2">// Outputs 9</span>
+                <br>
+
+                <span class="keywordmain">&nbsp;&nbsp;&nbsp;System</span>.out.<span class="keywordpublic2">println</span><span class="keywordbrace">(</span><span>myDouble</span><span class="keywordbrace">)</span>;
+                <span class="keywordpublic2">// Outputs 9.0</span>
+                <br>
+                <br>
+                <span class="keywordbrace">&nbsp;&nbsp;}</span>
+                <br>
+                <span class="keywordbrace">}</span>
+            </code>
+            
+                
+        </div>
+        
+    </div>
+
+    <div class="cens">
+        <h4 id="h">Narrowing Casting</h4>
+        <p>Narrowing casting must be done manually by placing the type in parentheses <code>()</code> in front of the value:</p>
+        
+        
+    </div>
+
+    <div class="cens">
+        
+        <h4 id="e">Example</h4>
+       
+        <div class="cent">
+            <code>
+                
+                
+                <span class="keywordpublic2">public</span>
+                <span class="keywordpublic2">class</span>
+                <span class="keywordmain">Main</span>
+                <span class="keywordbrace">{</span>
+                <br>
+                <span class="keywordpublic2">&nbsp;&nbsp;&nbsp;public</span>
+                <span class="keywordpublic2">static</span>
+                <span class="keywordpublic2">void</span>
+                <span class="keywordmain">main</span><span class="keywordbrace">(</span><span class="keywordmain">String</span>
+                <span class="keywordbrace">[]</span>
+                <span>args</span><span class="keywordbrace">)</span>
+                <span class="keywordbrace">{</span>
+                <br>
+                
+                <span class="keywordpublic2">&nbsp;&nbsp;&nbsp;double</span>
+                <span>myDouble</span>
+                <span class="keywordbrace">=</span>
+                <span class="keywordprint">9.78d;</span>
+                <br>
+                <span class="keywordpublic2">&nbsp;&nbsp;&nbsp;int</span>
+                <span>myInt</span>
+                <span class="keywordbrace">=</span>
+                <span class="keywordbrace">(</span><span class="keywordpublic2">int</span><span class="keywordbrace">)</span>
+                <span >myDouble;</span>
+                <span class="keywordpublic2">// Manual casting: double to int</span>
+                <br>
+                <br>
+                <span class="keywordmain">&nbsp;&nbsp;&nbsp;System</span>.out.<span class="keywordpublic2">println</span><span class="keywordbrace">(</span><span>myDouble</span><span class="keywordbrace">)</span>;
+                <span class="keywordpublic2">// Outputs 9.78</span>
+                <br>
+
+                <span class="keywordmain">&nbsp;&nbsp;&nbsp;System</span>.out.<span class="keywordpublic2">println</span><span class="keywordbrace">(</span><span>myInt</span><span class="keywordbrace">)</span>;
+                <span class="keywordpublic2">// Outputs 9</span>
+                <br>
+                <br>
+                <span class="keywordbrace">&nbsp;&nbsp;}</span>
+                <br>
+                <span class="keywordbrace">}</span>
+            </code>
+            
+                
+        </div>
+        
+    </div>
+
+    <div class="cens">
+        <h4 id="h">Real-Life Example</h4>
+        <p>Here's a real-life example of type casting where we create a program to calculate the percentage of a user's score in relation to the maximum score in a game.</p>
+        <p>We use type casting to make sure that the result is a <b>floating-point</b> value, rather than an integer:</p>
+        
+    </div>
+
+    <div class="cens">
+        
+        <h4 id="e">Example</h4>
+       
+        <div class="cent">
+            <code>
+                
+
+                <span class="keywordpublic2">// Set the maximum possible score in the game to 500</span>
+                <br>
+                <span class="keywordpublic2">int</span>
+                <span>maxScore</span>
+                <span class="keywordbrace">=</span>
+                <span class="keywordmain">500</span>;
+                <br>
+                <br>
+                <span class="keywordpublic2">// The actual score of the user</span>
+                <br>
+                <span class="keywordpublic2">int</span>
+                <span>userScore</span>
+                <span class="keywordbrace">=</span>
+                <span class="keywordmain">423</span>;
+                <br>
+                <br>
+
+                <span class="keywordpublic2">/* Calculate the percantage of the user's score in relation to the maximum available score.
+                    Convert userScore to float to make sure that the division is accurate */</span>
+                <br>
+                <span class="keywordpublic2">float </span>
+                <span>percentage</span>
+                <span class="keywordbrace">=</span>
+                <span class="keywordbrace">(</span><span class="keywordpublic2">float</span><span class="keywordbrace">)</span>
+                <span >userScore / maxScore</span>
+                <span class="keywordmain">* 100.0f</span>;
+                <span class="keywordpublic2">// Manual casting: double to int</span>
+                <br>
+                <br>
+                <span class="keywordmain">System</span>.out.<span class="keywordpublic2">println</span><span class="keywordbrace">(</span><span class="keywordprint">"User's percentage is "</span>
+                +
+                <span>percentage</span>
+                <span class="keywordbrace">)</span>;  
+            
+            </code>
+            
+                
+        </div>
+        
+    </div>
+    
+
+    <div class="buttun">
+        <button><a href="javaRealLife.html" >❮ Previous</a></button>
+        <button><a href="javaOperators.html">Next ❯</a></button>
+        
+    </div>
+    <!-- <div class="lessonA"> 
+        <a href="" >❮ Previous</a>
+        <a href="">Next ❯</a>
+        
+    </div>-->
+</body>
+<script src="script.js"></script>
+</html>

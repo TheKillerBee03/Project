@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filling the blank games</title>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: url('b8.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+  overflow: scroll;
+  color: #333;
+}
+.keywordpublic{
+    color: lightblue;
+  }
+  .keywordpublic2{
+    color: lightblue;
+  }
+  .keywordmain{
+    color: red;
+  }
+  .keywordbrace{
+    color: gray;
+  }
+  .keywordprint{
+    color: lightgreen;
+  }
+ 
+  .s{
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    color: black;
+    border: 2px solid aquamarine;
+    letter-spacing: 3px;
+  }
+  .s .droppable{
+    border: 1px solid aqua;
+    width: 80px;
+    height: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .draggableContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 1px solid aqua;
+    margin: 10px;
+    
+}
+.box{
+  margin: 10px;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.box:hover{
+  color: aqua;
+}
+.correct{
+    color: green;
+}
+.wrong{
+  color: red;
+}
+.board {
+  position: absolute;
+  top: 23%;
+  left: 0;
+  line-height: 20px;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 2px solid #1976d2;
+  border-radius: 80px;
+  width: 180px;
+  text-align: center;
+  color: #333;
+}
+code{
+  color: white;
+  line-height: 40px;
+  margin: 20px;
+}
+h2{
+  font-style: italic;
+  color: white;
+  text-align: center;
+}
+button{
+    margin: 10px;
+}
+button a{
+    text-decoration: none;
+    padding: 10px;
+    
+}
+.pa{
+  background-color: #E7E9EB;
+  padding: 5px 15px 5px 15px;
+  
+  border-radius: 10px;
+  text-align: start;
+
+}
+
+
+
+    </style>
+</head>
+<body class="body">
+            
+
+  
+        <h2>Java Fill The Blank</h2>
+        <br>
+        <p class="pa"><b style="color: black;">Direction:</b>Choose the correct answer from the box below. Drag your answer to the correct corresponding object</p>
+
+            <div class="draggableContainer">
+                
+                
+                
+                <span class="box" draggable="true" id="box4">++digit</span>
+                <span class="box" draggable="true" id="box1">digit</span>
+            </div>
+
+
+          <div class="s">
+            <code>
+            <span class="keywordpublic">public</span>
+            <span class="keywordpublic">class</span>
+            <span>whileLoop</span>
+            <span class="keywordbrace"> { </span>
+            <br>
+            <span class="keywordpublic2"> &nbsp;&nbsp;&nbsp;public</span>
+            <span>static</span>
+            
+            <!-- <div class="drop-target" data-correct="dog"><p>dog</p></div> -->
+            <span class="keywordpublic">void</span>
+            <span class="keywordmain">main</span>
+            <span class="keywordbrace"> ( </span>
+            <span class="keywordmain">String</span>
+            <span class="keywordbrace"> [] </span>
+            <span>args</span>
+            <span class="keywordbrace"> ) </span>
+            <span class="keywordbrace"> { </span>
+            
+            <br>
+            <span class="keywordpublic">&nbsp;&nbsp;&nbsp;int</span>
+            <span>digit = 0;</span>
+            <br>
+            <span class="keywordpublic">&nbsp;&nbsp;&nbsp;while</span>
+            <span class="keywordbrace">(</span>
+            <span class="droppable" data-draggable-id="box1">1.&nbsp;</span>
+            < 5
+              
+            <span class="keywordbrace">)</span>
+            <span class="keywordbrace">{</span>
+            <br>
+            <span class="keywordmain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System</span></span>.out.<span class="keywordmain">println</span> <span class="keywordbrace">( </span>
+            <span class="keywordprint">"Number start on:"</span> +
+            <span class="droppable" data-draggable-id="box4">4.&nbsp;</span>
+            
+            <span class="keywordbrace"> )</span>;
+            
+            <br>
+            <span class="keywordbrace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span>
+            <br>
+            <span class="keywordbrace">&nbsp;&nbsp;&nbsp;}</span>
+            <br>
+            <span class="keywordbrace">}</span>
+        </code>
+        </div> 
+        <div class="board">Remarks:<p id="remarks"></p>
+            TotalScore:<p id="scores"></p>
+           
+            </div>
+            <div>
+            <button><a href="gamesLevelPage.html">Back</a></button>
+            <button><a href="">Retry</a></button>
+            <button><a href="games8.html">Next</a></button>
+        </div>
+</body>
+<script >
+    //store the reference  ...box ... droppable
+const draggableElement = document.querySelectorAll('.box');
+const droppableElement = document.querySelectorAll('.droppable');
+let score = 0;
+//DRAG START
+draggableElement.forEach(element=>{
+    
+    element.addEventListener('dragstart', (drgStart)=>{
+        drgStart.dataTransfer.setData('text', drgStart.target.id);
+        //apply the css draggableFormat       ---CSS CLASS---
+        drgStart.currentTarget.classList.add('draggableFormat');
+        //console.log('dragstart event is activated!');
+       // console.log(drgStart); //to check if data transfer is working
+
+    });//end of dragstart    
+});
+
+
+//DROP EVENT
+droppableElement.forEach(element=>{
+    element.addEventListener('drop', drpEvt=>{
+        drpEvt.preventDefault();
+        const droppedElementId = drpEvt.dataTransfer.getData('text'); //BOX1
+        const dropZoneId = drpEvt.target.getAttribute('data-draggable-id');
+        const draggableElement = document.getElementById(droppedElementId);
+
+        drpEvt.target.appendChild(document.getElementById(droppedElementId));
+        //drpEvt.target.appendChild(draggableElement.cloneNode(true));
+        //console.log(dropZoneId);
+        if(droppedElementId===dropZoneId){
+            //console.log('Right');
+            element.classList.add('correct');
+            // document.getElementById('correct').innerText = "";
+            score+=1;
+            document.getElementById('remarks').innerText = "Correct!";
+            document.getElementById('scores').innerText = score;
+        }else{
+            //console.log('Wrong');
+            element.classList.add('wrong');
+            document.getElementById('remarks').innerText = "Wrong!";
+        }//end of if else
+
+    });//end of add eventListener
+
+    //DRAG OVER
+    element.addEventListener('dragover', (drgOverEvt)=>{
+        drgOverEvt.preventDefault();
+    });//end of drag over
+});
+
+//DRAG END
+draggableElement.forEach(element=>{
+    element.addEventListener('dragend', drgendEvt=>{
+        //drgendEvt.currentTarget.classList.remove('draggableFormat');
+    });
+});
+</script>
+</html>

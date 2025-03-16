@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <nav>
+        <ul>
+            <div class="menu-button" onclick=showNav()><a style="display: flex; justify-content: flex-start;"><svg xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 96 960 960" width="28"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></div>
+        
+        <ul>
+        <!-- <div onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26" style="fill: white;"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></div> -->
+        <li ><a href="index.html">Home</a></li>
+      <li class="hideOnMobile"><a href="lesson.html">Lesson</a></li>
+      <li class="hideOnMobile"><a href="#">Quiz</a></li>
+      <li class="hideOnMobile"><a href="#">Games</a></li>
+      <li class="hideOnMobile"><a href="#">About</a></li>
+    </ul>
+    </ul>
+    </nav>
+     <div class="sidenav">
+        <div onclick=hideNav() ><a style="padding-left: 5px;"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26" style="fill: white;"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></div>
+        <h2>Java Lesson</h2>
+    <a href="lesson.html">Java HOME</a>
+    <a href="intro.html">Java Intro</a>
+    <a href="getStarted.html">Java Get Started</a>
+    <a href="syntax.html">Java Syntax</a>
+    <a href="outputPrint.html">Java Output</a>
+    <a href="outputPrintNum.html">Java Output/Print</a>
+    <a href="#">Java Comments</a>
+    <a href="#">Java Variables</a>
+    <a href="#">Java Data Types</a>
+    <a href="#">Java Type Casting</a>
+    <a href="#">Java Operators</a>
+    <a href="#">Java Strings</a>
+    <a href="#">Java Math</a>
+    <a href="#">Java Booleans</a>
+    <a href="#">Java If...Else</a>
+    <a href="#">Java Switch</a>
+    <a href="#">Java While Loop</a>
+    <a href="#">Java For Loop</a>
+    <a href="#">Java Break/Continue</a>
+    <a href="#">Java Arrays</a>
+    
+    </div> 
+    <h4 class="lessonh4">Java Short Hand If...Else (Ternary Operator)</h4>
+    
+    
+    <div class="cen">
+        <h4 id="h">Short Hand if...else</h4>
+        <p>There is also a short-hand <a href="javaIf.html">if else</a>, which is known as the <b>ternary operator</b> because it consists of three operands.</p>
+        <p>It can be used to replace multiple lines of code with a single line, and is most often used to replace simple if else statements:</p>
+    </div>
+
+   <div class="cens">
+    <h4 id="e">Syntax</h4>
+    <div class="cent">
+       <code>
+        <span>variable = (condition) ? expressionTrue :  expressionFalse;</span>
+       </code>
+    </div>
+   </div>
+
+   <div class="cens">
+    <h2>Instead of writing:</h2>
+</div>
+    
+
+    <div class="cens">
+        
+        <h4 id="e">Example</h4>
+       
+        <div class="cent">
+            <code>
+                
+                
+                <span class="keywordpublic2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int </span>
+                <span>time  </span>
+                <span class="keywordbrace">=</span>
+                <span class="keywordprint">20;</span>
+                <br>
+                
+                <span class="keywordpublic2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if </span>
+                <span class="keywordbrace">(</span><span>time  <span class="keywordmain"><</span> 18</span><span class="keywordbrace">)</span>
+                <span class="keywordbrace">{</span>
+                <br>
+                <span class="keywordmain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System</span>.out.<span class="keywordpublic2">println</span><span class="keywordbrace">(</span><span class="keywordprint">"Good morning."</span><span class="keywordbrace">)</span>;
+                <br>
+                
+                <span class="keywordbrace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span>
+                <span class="keywordpublic2">else </span>
+                <span class="keywordbrace">{</span>
+                <br>
+                <span class="keywordmain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System</span>.out.<span class="keywordpublic2">println</span><span class="keywordbrace">(</span><span class="keywordprint">"Good evening."</span><span class="keywordbrace">)</span>;
+                <br>
+                <span class="keywordbrace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span>
+                <br>
+                <span class="keywordpublic2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Outputs "Good evening." </span>
+
+            </code>
+            
+                
+        </div>
+        
+    </div>
+
+    <div class="cens">
+        <h2>You can simply write:</h2>
+    </div>
+
+    <div class="cens">
+        
+        <h4 id="e">Example</h4>
+       
+        <div class="cent">
+            <code>
+                
+                
+                <span class="keywordpublic2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int </span>
+                <span>time  </span>
+                <span class="keywordbrace">=</span>
+                <span class="keywordprint">22;</span>
+                <br>
+                <span class="keywordmain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String</span>
+                <span>result</span>
+                <span>= (time < <span class="keywordmain">18</span>)?   </span>
+                <span class="keywordprint">"Good day." :</span>
+                <span class="keywordprint">"Good evening."</span>;
+                <br>
+                <span class="keywordmain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System</span>.out.<span class="keywordpublic2">println</span><span class="keywordbrace">(</span><span >result</span><span class="keywordbrace">)</span>;
+                
+            </code>
+            
+                
+        </div>
+        
+    </div>
+
+    <div class="cens">
+        <h4 id="h">Example explained</h4>
+        <h2>In the example above, time (22) is greater than 10, so the <b>first condition</b> is <code>false</code>. The next condition, in the <code>else if</code> statement, is also <code>false</code>, so we move on to the <code>else</code> condition since <b>condition1</b> and <b>condition2</b> is both <code>false</code> - and print to the screen "Good evening".</h2>
+        <h2>However, if the time was 14, our program would print "Good day."</h2>
+    
+    </div>
+
+
+
+    
+
+    <div class="buttun">
+        <button><a href="javaElseIf.html" >❮ Previous</a></button>
+        <button><a href="javaElseIfRealLife.html">Next ❯</a></button>
+        
+    </div>
+    <!-- <div class="lessonA"> 
+        <a href="" >❮ Previous</a>
+        <a href="">Next ❯</a>
+        
+    </div>-->
+</body>
+<script src="script.js"></script>
+</html>

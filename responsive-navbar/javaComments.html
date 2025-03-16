@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <nav>
+        <ul>
+            <div class="menu-button" onclick=showNav()><a style="display: flex; justify-content: flex-start;"><svg xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 96 960 960" width="28"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></div>
+        
+        <ul>
+        <!-- <div onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26" style="fill: white;"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></div> -->
+        <li ><a href="index.html">Home</a></li>
+        <li class="hideOnMobile"><a href="lesson.html">Lesson</a></li>
+        <li class="hideOnMobile"><a href="quizHome.html">Quiz</a></li>
+        <li class="hideOnMobile"><a href="gameHome.html">Games</a></li>
+        <li class="hideOnMobile"><a href="">About</a></li>
+    </ul>
+    </ul>
+    </nav>
+     <div class="sidenav">
+        <div onclick=hideNav() ><a style="padding-left: 5px;"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26" style="fill: white;"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></div>
+        <h2>Java Lesson</h2>
+    <a href="lesson.html">Java HOME</a>
+    <a href="intro.html">Java Intro</a>
+    <a href="getStarted.html">Java Get Started</a>
+    <a href="syntax.html">Java Syntax</a>
+    <a href="outputPrint.html">Java Output</a>
+    <a href="outputPrintNum.html">Java Output/Print</a>
+    <a href="#">Java Comments</a>
+    <a href="#">Java Variables</a>
+    <a href="#">Java Data Types</a>
+    <a href="#">Java Type Casting</a>
+    <a href="#">Java Operators</a>
+    <a href="#">Java Strings</a>
+    <a href="#">Java Math</a>
+    <a href="#">Java Booleans</a>
+    <a href="#">Java If...Else</a>
+    <a href="#">Java Switch</a>
+    <a href="#">Java While Loop</a>
+    <a href="#">Java For Loop</a>
+    <a href="#">Java Break/Continue</a>
+    <a href="#">Java Arrays</a>
+    
+    </div> 
+    <h4 class="lessonh4">Java Comments</h4>
+    
+    
+    <div class="cen">
+        <h4 id="h">Java Comments</h4>
+        <p>Comments can be used to explain Java code, and to make it more readable. It can also be used to prevent execution when testing alternative code.</p>
+       
+    </div>
+    
+    <div class="cens">
+        <h4 id="m">Single-line Comments</h4>
+        <p>Single-line comments start with two forward slashes ( <code>//</code> ).</p>
+        <p>Any text between <code>//</code> and the end of the line is ignored by Java (will not be executed).</p>
+        <p>This example uses a single-line comment before a line of code:</p>
+    </div>
+
+    <div class="cens">
+        
+        <h4 id="e">Example</h4>
+        <div class="cent">
+            <code>
+                
+            <span class="keywordprint"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//this is a comment</span>
+            <br>
+            <span class="keywordpublic2"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System</span>.out.<span class="keywordmain">println</span><span class="keywordbrace">( </span>
+            <span class="keywordprint">"Hello World"</span>
+            <span class="keywordbrace"> )</span><span class="keywordbrace">; </span>
+            
+        </code>
+            
+                
+        </div>
+    </div>
+
+    <div class="cens">
+        
+        <h2>This example uses a single-line comment at the end of a line of code:</h2>
+    </div>
+
+    <div class="cens">
+        
+        <h4 id="e">Example</h4>
+        <div class="cent">
+            <code>
+                
+            <span class="keywordpublic2"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System</span>.out.<span class="keywordmain">println</span><span class="keywordbrace">( </span>
+            <span class="keywordprint">"Hello World"</span>
+            <span class="keywordbrace"> )</span><span class="keywordbrace">; </span>
+            <span class="keywordprint"> //this is a comment</span>
+            
+        </code>
+            
+                
+        </div>
+    </div>
+
+    <div class="cens">
+        <h4 id="m">Java Multi-line Comments</h4>
+        <p>Multi-line comments start with <code>/*</code> and ends with <code>*/</code>.</p>
+        <p>Any text between <code>/*</code> and <code>*/</code> will be ignored by Java.</p>
+        <p>This example uses a multi-line comment (a comment block) to explain the code:</p>
+    </div>
+
+    <div class="cens">
+        
+        <h4 id="e">Example</h4>
+        <div class="cent">
+            <code>
+            <span class="keywordprint"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* The code below will print the words Hello World
+                    to the screen,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp and it is amazing */</span>
+                    <br>
+            <span class="keywordpublic2"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System</span>.out.<span class="keywordmain">println</span><span class="keywordbrace">( </span>
+            <span class="keywordprint">"Hello World"</span>
+            <span class="keywordbrace"> )</span><span class="keywordbrace">; </span>
+            
+            
+        </code>
+            
+                
+        </div>
+    </div>
+    
+    <div class="cens">
+        <h4 id="m">Single or multi-line comments?</h4>
+        <p>It's up to you which one you use. Normally, we use <code>//</code> for short comments, and <code>/* */</code> for longer.</p>
+        
+    </div>
+
+
+    <div class="buttun">
+        <button><a href="outputPrintNum.html" >❮ Previous</a></button>
+        <button><a href="javaVariable.html">Next ❯</a></button>
+        
+    </div>
+    <!-- <div class="lessonA"> 
+        <a href="" >❮ Previous</a>
+        <a href="">Next ❯</a>
+        
+    </div>-->
+</body>
+<script src="script.js"></script>
+</html>

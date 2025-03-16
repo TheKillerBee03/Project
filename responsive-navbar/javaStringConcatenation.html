@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <nav>
+        <ul>
+            <div class="menu-button" onclick=showNav()><a style="display: flex; justify-content: flex-start;"><svg xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 96 960 960" width="28"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></div>
+        
+        <ul>
+        <!-- <div onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26" style="fill: white;"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></div> -->
+        <li ><a href="index.html">Home</a></li>
+      <li class="hideOnMobile"><a href="lesson.html">Lesson</a></li>
+      <li class="hideOnMobile"><a href="#">Quiz</a></li>
+      <li class="hideOnMobile"><a href="#">Games</a></li>
+      <li class="hideOnMobile"><a href="#">About</a></li>
+    </ul>
+    </ul>
+    </nav>
+     <div class="sidenav">
+        <div onclick=hideNav() ><a style="padding-left: 5px;"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26" style="fill: white;"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></div>
+        <h2>Java Lesson</h2>
+    <a href="lesson.html">Java HOME</a>
+    <a href="intro.html">Java Intro</a>
+    <a href="getStarted.html">Java Get Started</a>
+    <a href="syntax.html">Java Syntax</a>
+    <a href="outputPrint.html">Java Output</a>
+    <a href="outputPrintNum.html">Java Output/Print</a>
+    <a href="#">Java Comments</a>
+    <a href="#">Java Variables</a>
+    <a href="#">Java Data Types</a>
+    <a href="#">Java Type Casting</a>
+    <a href="#">Java Operators</a>
+    <a href="#">Java Strings</a>
+    <a href="#">Java Math</a>
+    <a href="#">Java Booleans</a>
+    <a href="#">Java If...Else</a>
+    <a href="#">Java Switch</a>
+    <a href="#">Java While Loop</a>
+    <a href="#">Java For Loop</a>
+    <a href="#">Java Break/Continue</a>
+    <a href="#">Java Arrays</a>
+    
+    </div> 
+    <h4 class="lessonh4">Java String Concatenation</h4>
+    
+    
+    <div class="cen">
+        <h4 id="h">String Concatenation</h4>
+        <p>The <code>+</code> operator can be used between strings to combine them. This is called <b>concatenation</b>:</p>
+    </div>
+    
+    <div class="cens">
+        
+        <h4 id="e">Example</h4>
+        
+        <div class="cent">
+            <code>
+                
+                <span class="keywordmain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String</span>
+                <span>firstName    </span>
+                <span class="keywordbrace">=</span>
+                <span class="keywordprint">"Laurence"</span>;
+                <br>
+                <span class="keywordmain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String</span>
+                <span>lastName    </span>
+                <span class="keywordbrace">=</span>
+                <span class="keywordprint">"Libunao"</span>;
+                <br>
+                <span class="keywordmain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System</span>.ou.<span class="keywordmain">println</span><span class="keywordbrace">(</span>firstName
+                + <span class="keywordprint">"  "</span> + lastName<span class="keywordbrace">);</span>
+                
+            
+        </code>
+            
+                
+        </div>
+        
+    </div>
+
+    <div class="cens">
+        <h2>Note that we have added an empty text (" ") to create a space between firstName and lastName on print.</h2>
+        <h2>You can also use the <code>concat()</code> method to concatenate two strings:</h2>
+    </div>
+
+    <div class="cens">
+        
+        <h4 id="e">Example</h4>
+        
+        <div class="cent">
+            <code>
+                
+                <span class="keywordmain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String</span>
+                <span>firstName    </span>
+                <span class="keywordbrace">=</span>
+                <span class="keywordprint">"Laurence"</span>;
+                <br>
+                <span class="keywordmain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String</span>
+                <span>lastName    </span>
+                <span class="keywordbrace">=</span>
+                <span class="keywordprint">"Libunao"</span>;
+                <br>
+                <span class="keywordmain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System</span>.ou.<span class="keywordmain">println</span><span class="keywordbrace">(</span>firstName<span class="keywordmain">.concat</span><span class="keywordbrace">(</span>lastName<span class="keywordbrace">)</span><span class="keywordbrace">);</span>
+                
+            
+        </code>
+            
+                
+        </div>
+        
+    </div>
+
+
+
+    
+    
+    <div class="buttun">
+        <button><a href="javaString.html" >❮ Previous</a></button>
+        <button><a href="javaNumber&String.html">Next ❯</a></button>
+        
+    </div>
+    <!-- <div class="lessonA"> 
+        <a href="" >❮ Previous</a>
+        <a href="">Next ❯</a>
+        
+    </div>-->
+</body>
+<script src="script.js"></script>
+</html>

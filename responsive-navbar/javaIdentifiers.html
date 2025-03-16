@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <nav>
+        <ul>
+            <div class="menu-button" onclick=showNav()><a style="display: flex; justify-content: flex-start;"><svg xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 96 960 960" width="28"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></div>
+        
+        <ul>
+        <!-- <div onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26" style="fill: white;"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></div> -->
+        <li ><a href="index.html">Home</a></li>
+      <li class="hideOnMobile"><a href="lesson.html">Lesson</a></li>
+      <li class="hideOnMobile"><a href="#">Quiz</a></li>
+      <li class="hideOnMobile"><a href="#">Games</a></li>
+      <li class="hideOnMobile"><a href="#">About</a></li>
+    </ul>
+    </ul>
+    </nav>
+     <div class="sidenav">
+        <div onclick=hideNav() ><a style="padding-left: 5px;"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26" style="fill: white;"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></div>
+        <h2>Java Lesson</h2>
+    <a href="lesson.html">Java HOME</a>
+    <a href="intro.html">Java Intro</a>
+    <a href="getStarted.html">Java Get Started</a>
+    <a href="syntax.html">Java Syntax</a>
+    <a href="outputPrint.html">Java Output</a>
+    <a href="outputPrintNum.html">Java Output/Print</a>
+    <a href="#">Java Comments</a>
+    <a href="#">Java Variables</a>
+    <a href="#">Java Data Types</a>
+    <a href="#">Java Type Casting</a>
+    <a href="#">Java Operators</a>
+    <a href="#">Java Strings</a>
+    <a href="#">Java Math</a>
+    <a href="#">Java Booleans</a>
+    <a href="#">Java If...Else</a>
+    <a href="#">Java Switch</a>
+    <a href="#">Java While Loop</a>
+    <a href="#">Java For Loop</a>
+    <a href="#">Java Break/Continue</a>
+    <a href="#">Java Arrays</a>
+    
+    </div> 
+    <h4 class="lessonh4">Java Identifiers</h4>
+    
+    
+    <div class="cen">
+        <h4 id="h">Identifiers</h4>
+        <p>All Java <b>variables</b> must be <b>identified</b> with <b>unique names</b>.</p>
+        <p>These unique names are called <b>identifiers</b>.</p>
+        <p>Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).</p>
+        <p><b>Note</b>: It is recommended to use descriptive names in order to create understandable and maintainable code:</p>
+    
+    </div>
+    
+    <div class="cens">
+        
+        <h4 id="e">Example</h4>
+       
+        <div class="cent">
+            <code>
+                <span class="keywordprint">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Good</span>
+                <br>
+                <span class="keywordpublic2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int</span>
+                <span>minutesPerHour</span>
+                <span class="keywordbrace">=</span>
+                <span class="keywordprint">60;</span>
+                <br>
+                <br>
+                <span class="keywordprint">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// OK, but not so easy to understand what m actually is</span>
+                <br>
+                <span class="keywordpublic2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int</span>
+                <span>m</span>
+                <span class="keywordbrace">=</span>
+                <span class="keywordprint">60;</span>
+                
+            
+            
+        </code>
+            
+                
+        </div>
+        
+    </div>
+
+    <div class="cens">
+        
+        <p>The general rules for naming variables are:</p>
+        
+        <ul>
+            <li>Names can contain letters, digits, underscores, and dollar signs</li>
+            <li>Names must begin with a letter</li>
+            <li>Names should start with a lowercase letter, and cannot contain whitespace</li>
+            <li>Names can also begin with $ and _</li>
+            <li>Names are case-sensitive ("myVar" and "myvar" are different variables)</li>
+            <li>Reserved words (like Java keywords, such as <code>int</code> or <code>boolean</code>) cannot be used as names</li>
+            
+        </ul>
+    </div>
+
+    <div class="buttun">
+        <button><a href="javaMultipleVariables.html" >❮ Previous</a></button>
+        <button><a href="javaRealLife.html">Next ❯</a></button>
+        
+    </div>
+    <!-- <div class="lessonA"> 
+        <a href="" >❮ Previous</a>
+        <a href="">Next ❯</a>
+        
+    </div>-->
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <nav>
+        <ul>
+            <div class="menu-button" onclick=showNav()><a style="display: flex; justify-content: flex-start;"><svg xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 96 960 960" width="28"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></div>
+        
+        <ul>
+        <!-- <div onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26" style="fill: white;"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></div> -->
+        <li ><a href="index.html">Home</a></li>
+      <li class="hideOnMobile"><a href="lesson.html">Lesson</a></li>
+      <li class="hideOnMobile"><a href="#">Quiz</a></li>
+      <li class="hideOnMobile"><a href="#">Games</a></li>
+      <li class="hideOnMobile"><a href="#">About</a></li>
+    </ul>
+    </ul>
+    </nav>
+     <div class="sidenav">
+        <div onclick=hideNav() ><a style="padding-left: 5px;"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26" style="fill: white;"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></div>
+        <h2>Java Lesson</h2>
+        <a href="lesson.html">Java HOME</a>
+        <a href="intro.html">Java Intro</a>
+        <a href="getStarted.html">Java Get Started</a>
+        <a href="syntax.html">Java Syntax</a>
+        <a href="outputPrint.html">Java Output Text</a>
+        <a href="outputPrintNum.html">Java Output Number</a>
+        <a href="javaComments.html">Java Comments</a>
+        <a href="javaVariable.html">Java Variables</a>
+        <a href="javaPrintVariables.html">Java Print Variables</a>
+        <a href="javaMultipleVariables.html">Java Multiple Variables</a>
+        <a href="javaIdentifiers.html">Java Identifiers Variables</a>
+        <a href="javaRealLife.html">Java RealLife Variables</a>
+        <a href="javaDataTypes.html">Java Data Types</a>
+        <a href="javaNumber.html">Java Numbers Data Types</a>
+        <a href="javaBoolean.html">Java Boolean Type Types</a>
+        <a href="javaDataTypes.html">Java Data Types</a>
+        <a href="#">Java Type Casting</a>
+        <a href="#">Java Operators</a>
+        <a href="#">Java Strings</a>
+        <a href="#">Java Math</a>
+        <a href="#">Java Booleans</a>
+        <a href="#">Java If...Else</a>
+        <a href="#">Java Switch</a>
+        <a href="#">Java While Loop</a>
+        <a href="#">Java For Loop</a>
+        <a href="#">Java Break/Continue</a>
+        <a href="#">Java Arrays</a>
+    
+    </div> 
+    <h4 class="lessonh4">Java Syntax</h4>
+    
+    
+    <div class="cen">
+        <h4 id="h">Java Syntax</h4>
+        <p>In the previous chapter, we created a Java file called <code>Main.java</code>, and we used the following code to print "Hello World" to the screen:</p>
+        
+        
+    </div>
+    
+    <div class="cens">
+        <h4 id="e">Main.Java</h4>
+        <div class="cent">
+            <code>
+                <span class="keywordpublic">public</span>
+            <span class="keywordpublic">class</span>
+            <span class="keywordmain">Main</span>
+            <span class="keywordbrace"> { </span>
+            <br>
+            <span class="keywordpublic2"> &nbsp;&nbsp;&nbsp;public</span>
+            <span class="keywordpublic">static</span>
+            <span class="keywordpublic">void</span>
+            <span class="keywordmain">main</span>
+            <span class="keywordbrace"> ( </span>
+            <span class="keywordmain">String</span>
+            <span class="keywordbrace"> [] </span>
+            args
+            <span class="keywordbrace"> ) </span>
+            <span class="keywordbrace"> { </span>
+            <br>
+            <span class="keywordpublic2"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System</span>.out.<span class="keywordmain">println</span><span class="keywordbrace">( </span>
+            <span class="keywordprint">"Hello World"</span>
+            <span class="keywordbrace"> )</span><span class="keywordbrace">; </span>
+            <br>
+            <span class="keywordbrace"> &nbsp;&nbsp;} </span>
+            <br>
+            <span class="keywordbrace"> } </span>
+        </code>
+            
+                
+        </div>
+    </div>
+
+    <div class="cens">
+        <h4 id="m">Example explained</h4>
+        <p>Every line of code that runs in Java must be inside a <code>class</code>. And the class name should always start with an uppercase first letter. In our example, we named the class <b>Main</b>.</p>
+        <p><b>NOTE:</b> Java is case-sensitive: "MyClass" and "myclass" has different meaning.</p>
+        <p>The name of the java file <b>must match</b> the class name. When saving the file, save it using the class name and add ".java" to the end of the filename. To run the example above on your computer, make sure that Java is properly installed: Go to the <a href="getStarted.html">Get Started Chapter</a> for how to install Java. The output should be:</p>
+    </div>
+
+
+    <div class="cens">
+        <div class="cents">
+            
+            Hello World
+        </div>
+    </div>
+
+    <div class="cens">
+        <h4 id="m">The main Method</h4>
+        <p>The <code>main()</code> method is required and you will see it in every Java program:</p>
+        
+    </div>
+
+    <div class="cens">
+        
+        <div class="cent">
+            <code>
+                
+            <span class="keywordpublic2"> &nbsp;&nbsp;&nbsp;public</span>
+            <span class="keywordpublic">static</span>
+            <span class="keywordpublic">void</span>
+            <span class="keywordmain">main</span>
+            <span class="keywordbrace"> ( </span>
+            <span class="keywordmain">String</span>
+            <span class="keywordbrace"> [] </span>
+            args
+            <span class="keywordbrace"> ) </span>
+            <span class="keywordbrace"> { </span>
+            
+        </code>
+            
+                
+        </div>
+    </div>
+
+    <div class="cens">
+        
+        <p>Any code inside the <code>main()</code> method will be executed. Don't worry about the keywords before and after it. You will get to know them bit by bit while reading this tutorial.</p>
+        <p>For now, just remember that every Java program has a <code>class</code> name which must match the filename, and that every program must contain the <code>main()</code> method.</p>
+    </div>
+
+    <div class="cens">
+        <h4 id="m">System.out.println()</h4>
+        <p>Inside the <code>main()</code> method, we can use the <code>println()</code> method to print a line of text to the screen:</p>
+        
+    </div>
+
+    <div class="cens">
+        
+        <div class="cent">
+            <code>
+                
+            <span class="keywordpublic2"> &nbsp;&nbsp;&nbsp;public</span>
+            <span class="keywordpublic">static</span>
+            <span class="keywordpublic">void</span>
+            <span class="keywordmain">main</span>
+            <span class="keywordbrace"> ( </span>
+            <span class="keywordmain">String</span>
+            <span class="keywordbrace"> [] </span>
+            args
+            <span class="keywordbrace"> ) </span>
+            <span class="keywordbrace"> { </span>
+                <br>
+                <span class="keywordpublic2"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System</span>.out.<span class="keywordmain">println</span><span class="keywordbrace">( </span>
+                <span class="keywordprint">"Hello World"</span>
+                <span class="keywordbrace"> )</span><span class="keywordbrace">; </span>
+                <br>
+                <span class="keywordbrace"> &nbsp;&nbsp;} </span>
+        </code>
+            
+                
+        </div>
+    </div>
+
+    <div class="cens">
+        <p><b>NOTE:</b> The curly braces <code>{}</code> marks the beginning and the end of a block of code.</p>
+        <p><code>System</code> is a built-in Java class that contains useful members, such as <code>out</code>, which is short for "output". The <code>println()</code> method, short for "print line", is used to print a value to the screen (or a file).</p>
+        <p>Don't worry too much about how <code>System</code>, <code>out</code> and <code>println()</code> works. Just know that you need them together to print stuff to the screen.</p>
+        <p>You should also note that each code statement must end with a semicolon (<code>;</code>).</p>
+    </div>
+
+    <div class="buttun">
+        <button><a href="getStarted.html" >❮ Previous</a></button>
+        <button><a href="outputPrint.html">Next ❯</a></button>
+        
+    </div>
+    <!-- <div class="lessonA"> 
+        <a href="" >❮ Previous</a>
+        <a href="">Next ❯</a>
+        
+    </div>-->
+</body>
+<script src="script.js"></script>
+</html>

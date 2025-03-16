@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <nav>
+        <ul>
+            <div class="menu-button" onclick=showNav()><a style="display: flex; justify-content: flex-start;"><svg xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 96 960 960" width="28"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></div>
+        
+        <ul>
+        <!-- <div onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26" style="fill: white;"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></div> -->
+        <li ><a href="index.html">Home</a></li>
+      <li class="hideOnMobile"><a href="lesson.html">Lesson</a></li>
+      <li class="hideOnMobile"><a href="#">Quiz</a></li>
+      <li class="hideOnMobile"><a href="#">Games</a></li>
+      <li class="hideOnMobile"><a href="#">About</a></li>
+    </ul>
+    </ul>
+    </nav>
+     <div class="sidenav">
+        <div onclick=hideNav() ><a style="padding-left: 5px;"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26" style="fill: white;"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></div>
+        <h2>Java Lesson</h2>
+    <a href="lesson.html">Java HOME</a>
+    <a href="intro.html">Java Intro</a>
+    <a href="getStarted.html">Java Get Started</a>
+    <a href="syntax.html">Java Syntax</a>
+    <a href="outputPrint.html">Java Output</a>
+    <a href="outputPrintNum.html">Java Output/Print</a>
+    <a href="#">Java Comments</a>
+    <a href="#">Java Variables</a>
+    <a href="#">Java Data Types</a>
+    <a href="#">Java Type Casting</a>
+    <a href="#">Java Operators</a>
+    <a href="#">Java Strings</a>
+    <a href="#">Java Math</a>
+    <a href="#">Java Booleans</a>
+    <a href="#">Java If...Else</a>
+    <a href="#">Java Switch</a>
+    <a href="#">Java While Loop</a>
+    <a href="#">Java For Loop</a>
+    <a href="#">Java Break/Continue</a>
+    <a href="#">Java Arrays</a>
+    
+    </div> 
+    <h4 class="lessonh4">Java Numbers</h4>
+    
+    
+    <div class="cen">
+        <h4 id="h">Numbers</h4>
+        <p>Primitive number types are divided into two groups:</p>
+        <p><b>Integer types</b> stores whole numbers, positive or negative (such as 123 or -456), without decimals. Valid types are <code>byte</code>, <code>short</code>, <code>int</code> and <code>long</code>. Which type you should use, depends on the numeric value.</p>
+        <p><b>Floating point types</b> represents numbers with a fractional part, containing one or more decimals. There are two types: <code>float</code> and <code>double</code>.</p>
+
+    </div>
+    
+    <div class="cens">
+        <h2>Even though there are many numeric types in Java, the most used for numbers are <code>int</code> (for whole numbers) and <code>double</code> (for floating point numbers). However, we will describe them all as you continue to read.</h2>
+    </div>
+
+    <div class="cens">
+        <h4 id="h">Integer Types</h4>
+        <h5 id="firsth5">Byte</h5>
+        <p>The <code>byte</code> data type can store whole numbers from -128 to 127. This can be used instead of <code>int</code> or other integer types to save memory when you are certain that the value will be within -128 and 127:</p>
+        
+        
+    </div>
+
+    <div class="cens">
+        
+        <h4 id="e">Example</h4>
+       
+        <div class="cent">
+            <code>
+                
+                
+                <span class="keywordpublic2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;byte </span>
+                <span>myNum    </span>
+                <span class="keywordbrace">=</span>
+                <span class="keywordprint">100;</span>
+                <br>
+                <span class="keywordmain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System</span>.out.<span class="keywordpublic2">println</span><span class="keywordbrace">(</span><span>myNum</span><span class="keywordbrace">)</span>;
+        </code>
+            
+                
+        </div>
+        
+    </div>
+
+    <div class="cens">
+        
+        <h5 id="firsth5">Short</h5>
+        <p>The <code>short</code> data type can store whole numbers from -32768 to 32767:</p>
+        
+        
+    </div>
+
+    <div class="cens">
+        
+        <h4 id="e">Example</h4>
+       
+        <div class="cent">
+            <code>
+                
+                
+                <span class="keywordpublic2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;short </span>
+                <span>myNum    </span>
+                <span class="keywordbrace">=</span>
+                <span class="keywordprint">5000;</span>
+                <br>
+                <span class="keywordmain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System</span>.out.<span class="keywordpublic2">println</span><span class="keywordbrace">(</span><span>myNum</span><span class="keywordbrace">)</span>;
+        </code>
+            
+                
+        </div>
+        
+    </div>
+
+    
+    <div class="cens">
+        
+        <h5 id="firsth5">Int</h5>
+        <p>The <code>int</code> data type can store whole numbers from -2147483648 to 2147483647. In general, and in our tutorial, the <code>int</code> data type is the preferred data type when we create variables with a numeric value.</p>
+        
+        
+    </div>
+
+    <div class="cens">
+        
+        <h4 id="e">Example</h4>
+       
+        <div class="cent">
+            <code>
+                
+                
+                <span class="keywordpublic2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int </span>
+                <span>myNum    </span>
+                <span class="keywordbrace">=</span>
+                <span class="keywordprint">10000;</span>
+                <br>
+                <span class="keywordmain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System</span>.out.<span class="keywordpublic2">println</span><span class="keywordbrace">(</span><span>myNum</span><span class="keywordbrace">)</span>;
+        </code>
+            
+                
+        </div>
+        
+    </div>
+    
+    <div class="cens">
+        
+        <h5 id="firsth5">Long</h5>
+        <p>The <code>long</code> data type can store whole numbers from -9223372036854775808 to 9223372036854775807. This is used when int is not large enough to store the value. Note that you should end the value with an "L":</p>
+        
+        
+    </div>
+
+    <div class="cens">
+        
+        <h4 id="e">Example</h4>
+       
+        <div class="cent">
+            <code>
+                
+                
+                <span class="keywordpublic2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;long </span>
+                <span>myNum    </span>
+                <span class="keywordbrace">=</span>
+                <span class="keywordprint">15000000000L;</span>
+                <br>
+                <span class="keywordmain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System</span>.out.<span class="keywordpublic2">println</span><span class="keywordbrace">(</span><span>myNum</span><span class="keywordbrace">)</span>;
+        </code>
+            
+                
+        </div>
+        
+    </div>
+
+    <div class="cens">
+        
+        <h5 id="firsth5">Floating Point Types</h5>
+        <p>You should use a floating point type whenever you need a number with a decimal, such as 9.99 or 3.14515.</p>
+        <p>The <code>float</code> and <code>double</code> data types can store fractional numbers. Note that you should end the value with an "f" for floats and "d" for doubles:</p>
+        
+    </div>
+
+    <div class="cens">
+        
+        <h4 id="e">Float Example</h4>
+       
+        <div class="cent">
+            <code>
+                
+                
+                <span class="keywordpublic2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;float </span>
+                <span>myNum    </span>
+                <span class="keywordbrace">=</span>
+                <span class="keywordprint">5.75f;</span>
+                <br>
+                <span class="keywordmain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System</span>.out.<span class="keywordpublic2">println</span><span class="keywordbrace">(</span><span>myNum</span><span class="keywordbrace">)</span>;
+        </code>
+            
+                
+        </div>
+        <br>
+        <h4 id="e">Double Example</h4>
+       
+        <div class="cent">
+            <code>
+                
+                
+                <span class="keywordpublic2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;double </span>
+                <span>myNum    </span>
+                <span class="keywordbrace">=</span>
+                <span class="keywordprint">19.99d;</span>
+                <br>
+                <span class="keywordmain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System</span>.out.<span class="keywordpublic2">println</span><span class="keywordbrace">(</span><span>myNum</span><span class="keywordbrace">)</span>;
+        </code>
+            
+                
+        </div>
+    </div>
+
+    <div class="cens">
+        <h2>Use <code>float</code> or <code>double</code>?</h2>
+        <h2>The <b>precision</b> of a floating point value indicates how many digits the value can have after the decimal point. The precision of <code>float</code> is only six or seven decimal digits, while <code>double</code> variables have a precision of about 16 digits. Therefore it is safer to use <code>double</code> for most calculations.</h2>
+    </div>
+
+    <div class="cens">
+        
+        <h5 id="firsth5">Scientific Numbers</h5>
+        <p>A floating point number can also be a scientific number with an " <code>e</code> " to indicate the power of 10:</p>
+        
+        
+    </div>
+
+    <div class="cens">
+        
+        <h4 id="e">Example</h4>
+       
+        <div class="cent">
+            <code>
+                
+                
+                <span class="keywordpublic2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;float </span>
+                <span>f1    </span>
+                <span class="keywordbrace">=</span>
+                <span class="keywordprint">35e3f;</span>
+                <br>
+                <span class="keywordpublic2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;double </span>
+                <span>d1    </span>
+                <span class="keywordbrace">=</span>
+                <span class="keywordprint">12E4d;</span>
+                <br>
+                <br>
+                <span class="keywordmain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System</span>.out.<span class="keywordpublic2">println</span><span class="keywordbrace">(</span><span>f1</span><span class="keywordbrace">)</span>;
+                <br>
+                <span class="keywordmain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System</span>.out.<span class="keywordpublic2">println</span><span class="keywordbrace">(</span><span>d1</span><span class="keywordbrace">)</span>;
+
+            </code>
+            
+                
+        </div>
+        
+    </div>
+
+    <div class="buttun">
+        <button><a href="javaRealLife.html" >❮ Previous</a></button>
+        <button><a href="javaBoolean.html">Next ❯</a></button>
+        
+    </div>
+    <!-- <div class="lessonA"> 
+        <a href="" >❮ Previous</a>
+        <a href="">Next ❯</a>
+        
+    </div>-->
+</body>
+<script src="script.js"></script>
+</html>

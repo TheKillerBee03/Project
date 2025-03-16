@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            background-color: black;
+        }
+        ul li{
+            display: inline-block;
+            position: relative;
+        }
+        ul li button a{
+            display: block;
+            padding: 20px 25px;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+        }
+        ul li ul.dropdown #main li{
+            display: none;
+        }
+        ul li ul.dropdown{
+            width: 100%;
+            background: khaki;
+            position: absolute;
+            display: none;
+        }
+        ul li:hover .dropdown #main{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><button onclick="hideShow()"><a href="">Drop Down &#x25BE;</a></button>
+            <ul id="main" class="dropdown">
+                <li><a href="">LInk 1</a></li>
+                <li><a href="">LInk 2</a></li>
+                <li><a href="">LInk 3</a></li>
+            </ul>
+        </li>
+        <li><a href="">about</a></li>
+    </ul>
+</body>
+<script>
+    var div = document.getElementById('main');
+    var display = 0;
+
+    function hideShow(){
+        if(display == 0){
+            
+            div.style.display = 'block';
+           
+            display = 1;
+        }else{
+            div.style.display = 'none';
+            display = 0;
+        }
+    }
+</script>
+</html>

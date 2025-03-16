@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <nav>
+        <ul>
+            <div class="menu-button" onclick=showNav()><a style="display: flex; justify-content: flex-start;"><svg xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 96 960 960" width="28"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></div>
+        
+        <ul>
+        <!-- <div onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26" style="fill: white;"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></div> -->
+        <li ><a href="index.html">Home</a></li>
+      <li class="hideOnMobile"><a href="lesson.html">Lesson</a></li>
+      <li class="hideOnMobile"><a href="#">Quiz</a></li>
+      <li class="hideOnMobile"><a href="#">Games</a></li>
+      <li class="hideOnMobile"><a href="#">About</a></li>
+    </ul>
+    </ul>
+    </nav>
+     <div class="sidenav">
+        <div onclick=hideNav() ><a style="padding-left: 5px;"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26" style="fill: white;"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></div>
+        <h2>Java Lesson</h2>
+    <a href="lesson.html">Java HOME</a>
+    <a href="intro.html">Java Intro</a>
+    <a href="getStarted.html">Java Get Started</a>
+    <a href="syntax.html">Java Syntax</a>
+    <a href="outputPrint.html">Java Output</a>
+    <a href="outputPrintNum.html">Java Output/Print</a>
+    <a href="#">Java Comments</a>
+    <a href="#">Java Variables</a>
+    <a href="#">Java Data Types</a>
+    <a href="#">Java Type Casting</a>
+    <a href="#">Java Operators</a>
+    <a href="#">Java Strings</a>
+    <a href="#">Java Math</a>
+    <a href="#">Java Booleans</a>
+    <a href="#">Java If...Else</a>
+    <a href="#">Java Switch</a>
+    <a href="#">Java While Loop</a>
+    <a href="#">Java For Loop</a>
+    <a href="#">Java Break/Continue</a>
+    <a href="#">Java Arrays</a>
+    
+    </div> 
+    <h4 class="lessonh4">Java Variables - Examples</h4>
+    
+    
+    <div class="cen">
+        <h4 id="h">Real-Life Examples</h4>
+        <p>Often in our examples, we simplify variable names to match their data type (myInt or myNum for <code>int</code> types, myChar for <code>char</code> types, and so on). This is done to avoid confusion.</b>.</p>
+        <p>However, for a practical example of using variables, we have created a program that stores different data about a college student:</b>.</p>
+        
+    </div>
+    
+    <div class="cens">
+        
+        <h4 id="e">Example</h4>
+       
+        <div class="cent">
+            <code>
+                <span class="keywordprint">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Student data</span>
+                <br>
+                <span class="keywordmain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String</span>
+                <span>studentName </span>
+                <span class="keywordbrace">=</span>
+                <span class="keywordprint">"Laurence Libunao";</span>
+                <br>
+                <span class="keywordpublic2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int</span>
+                <span>studentID</span>
+                <span class="keywordbrace">=</span>
+                <span class="keywordprint">20;</span>
+                <br>
+                <span class="keywordpublic2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int</span>
+                <span>studentAge </span>
+                <span class="keywordbrace">=</span>
+                <span class="keywordprint">18;</span>
+                <br>
+                <span class="keywordpublic2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;float </span>
+                <span>studentFee </span>
+                <span class="keywordbrace">=</span>
+                <span class="keywordprint">75.25f;</span>
+                <br>
+                <span class="keywordpublic2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;char </span>
+                <span>studentGrade  </span>
+                <span class="keywordbrace">=</span>
+                <span class="keywordprint">'A';</span>
+                <br>
+                <br>
+                <span class="keywordprint">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Print variables</span>
+                <br>
+                <span class="keywordpublic2"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System</span>.out.<span class="keywordmain">println</span><span class="keywordbrace">( </span>
+                <span class="keywordprint">"Student name: "</span> + studentName
+                <span class="keywordbrace"> )</span><span class="keywordbrace">; </span>
+                <br>
+                <span class="keywordpublic2"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System</span>.out.<span class="keywordmain">println</span><span class="keywordbrace">( </span>
+                <span class="keywordprint">"Student id: "</span> + studentID
+                <span class="keywordbrace"> )</span><span class="keywordbrace">; </span>
+                <br>
+                <span class="keywordpublic2"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System</span>.out.<span class="keywordmain">println</span><span class="keywordbrace">( </span>
+                <span class="keywordprint">"Student age: "</span> + studentAge
+                <span class="keywordbrace"> )</span><span class="keywordbrace">; </span>
+                <br>
+                <span class="keywordpublic2"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System</span>.out.<span class="keywordmain">println</span><span class="keywordbrace">( </span>
+                <span class="keywordprint">"Student fee: "</span> + studentFee
+                <span class="keywordbrace"> )</span><span class="keywordbrace">; </span>
+                <br>
+                <span class="keywordpublic2"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System</span>.out.<span class="keywordmain">println</span><span class="keywordbrace">( </span>
+                <span class="keywordprint">"Student grade: "</span> + studentGrade
+                <span class="keywordbrace"> )</span><span class="keywordbrace">; </span>
+            
+            
+        </code>
+            
+                
+        </div>
+        
+    </div>
+
+    <div class="cens">
+        <h4 id="h">Calculate the Area of a Rectangle</h4>
+        <p>In this real-life example, we create a program to calculate the area of a rectangle (by multiplying the length and width):</p>
+        
+        
+    </div>
+    
+    <div class="cens">
+        
+        <h4 id="e">Example</h4>
+       
+        <div class="cent">
+            <code>
+                <span class="keywordprint">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Create integer variables</span>
+                <br>
+                <span class="keywordpublic2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int</span>
+                <span>length </span>
+                <span class="keywordbrace">=</span>
+                <span class="keywordprint">4;</span>
+                <br>
+                <span class="keywordpublic2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int</span>
+                <span>width</span>
+                <span class="keywordbrace">=</span>
+                <span class="keywordprint">6;</span>
+                <br>
+                <span class="keywordpublic2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int</span>
+                <span>area; </span>
+                
+                <br>
+                <br>
+                <span class="keywordprint">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Calculate the area of a rectangle</span>
+                <br>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;area</span>
+                <span>=</span>
+                <span>length</span>
+                <span class="keywordbrace">*</span>
+                <span>width;</span>
+                <br>
+                <br>
+                <span class="keywordprint">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Print variables</span>
+                <br>
+                <span class="keywordpublic2"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System</span>.out.<span class="keywordmain">println</span><span class="keywordbrace">( </span>
+                <span class="keywordprint">"Length is: "</span> + length
+                <span class="keywordbrace"> )</span><span class="keywordbrace">; </span>
+                <br>
+                <span class="keywordpublic2"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System</span>.out.<span class="keywordmain">println</span><span class="keywordbrace">( </span>
+                <span class="keywordprint">"Width is: "</span> + width
+                <span class="keywordbrace"> )</span><span class="keywordbrace">; </span>
+                <br>
+                <span class="keywordpublic2"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System</span>.out.<span class="keywordmain">println</span><span class="keywordbrace">( </span>
+                <span class="keywordprint">"Area of the rectangle is: "</span> + area
+                <span class="keywordbrace"> )</span><span class="keywordbrace">; </span>
+                
+        </code>
+            
+                
+        </div>
+        
+    </div>
+
+
+    <div class="buttun">
+        <button><a href="javaIdentifiers.html" >❮ Previous</a></button>
+        <button><a href="javaDataTypes.html">Next ❯</a></button>
+        
+    </div>
+    <!-- <div class="lessonA"> 
+        <a href="" >❮ Previous</a>
+        <a href="">Next ❯</a>
+        
+    </div>-->
+</body>
+<script src="script.js"></script>
+</html>

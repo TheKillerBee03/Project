@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <nav>
+        <ul>
+            <div class="menu-button" onclick=showNav()><a style="display: flex; justify-content: flex-start;"><svg xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 96 960 960" width="28"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></div>
+        
+        <ul>
+        <!-- <div onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26" style="fill: white;"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></div> -->
+        <li ><a href="index.html">Home</a></li>
+      <li class="hideOnMobile"><a href="lesson.html">Lesson</a></li>
+      <li class="hideOnMobile"><a href="#">Quiz</a></li>
+      <li class="hideOnMobile"><a href="#">Games</a></li>
+      <li class="hideOnMobile"><a href="#">About</a></li>
+    </ul>
+    </ul>
+    </nav>
+     <div class="sidenav">
+        <div onclick=hideNav() ><a style="padding-left: 5px;"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26" style="fill: white;"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></div>
+        <h2>Java Lesson</h2>
+    <a href="lesson.html">Java HOME</a>
+    <a href="intro.html">Java Intro</a>
+    <a href="getStarted.html">Java Get Started</a>
+    <a href="syntax.html">Java Syntax</a>
+    <a href="outputPrint.html">Java Output</a>
+    <a href="outputPrintNum.html">Java Output/Print</a>
+    <a href="#">Java Comments</a>
+    <a href="#">Java Variables</a>
+    <a href="#">Java Data Types</a>
+    <a href="#">Java Type Casting</a>
+    <a href="#">Java Operators</a>
+    <a href="#">Java Strings</a>
+    <a href="#">Java Math</a>
+    <a href="#">Java Booleans</a>
+    <a href="#">Java If...Else</a>
+    <a href="#">Java Switch</a>
+    <a href="#">Java While Loop</a>
+    <a href="#">Java For Loop</a>
+    <a href="#">Java Break/Continue</a>
+    <a href="#">Java Arrays</a>
+    
+    </div> 
+    <h4 class="lessonh4">Java Output Numbers</h4>
+    
+    
+    <div class="cen">
+        <h4 id="h">Print Numbers</h4>
+        <p>You can also use the <code>println()</code> method to print numbers.</p>
+        <p>However, unlike text, we don't put numbers inside double quotes:</p>
+        
+    </div>
+    
+    <div class="cens">
+        <h4 id="e">Example</h4>
+        <div class="cent">
+            <code>
+                
+            <span class="keywordpublic2"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System</span>.out.<span class="keywordmain">println</span><span class="keywordbrace">( </span>
+            <span class="keywordprint">3</span>
+            <span class="keywordbrace"> )</span><span class="keywordbrace">; </span>
+            <br>
+            <span class="keywordpublic2"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System</span>.out.<span class="keywordmain">println</span><span class="keywordbrace">( </span>
+            <span class="keywordprint">358</span>
+            <span class="keywordbrace"> )</span><span class="keywordbrace">; </span>
+            <br>
+            <span class="keywordpublic2"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System</span>.out.<span class="keywordmain">println</span><span class="keywordbrace">( </span>
+            <span class="keywordprint">40000</span>
+            <span class="keywordbrace"> )</span><span class="keywordbrace">; </span>
+            
+        </code>
+            
+                
+        </div>
+    </div>
+
+    <div class="cens">
+        
+        <h2>You can also perform mathematical calculations inside the <code>println()</code> method:</h2>
+    </div>
+
+    <div class="cens">
+        <h4 id="e">Example</h4>
+        <div class="cent">
+            <code>
+                
+            <span class="keywordpublic2"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System</span>.out.<span class="keywordmain">println</span><span class="keywordbrace">( </span>
+            <span class="keywordprint">3 + 3</span>
+            <span class="keywordbrace"> )</span><span class="keywordbrace">; </span>
+            
+            
+        </code>
+            
+                
+        </div>
+    </div>
+
+    <div class="cens">
+        <h4 id="e">Example</h4>
+        <div class="cent">
+            <code>
+                
+            <span class="keywordpublic2"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System</span>.out.<span class="keywordmain">println</span><span class="keywordbrace">( </span>
+            <span class="keywordprint">3 * 3</span>
+            <span class="keywordbrace"> )</span><span class="keywordbrace">; </span>
+            
+            
+        </code>
+            
+                
+        </div>
+    </div>
+
+
+    
+    <div class="buttun">
+        <button><a href="outputPrint.html" >❮ Previous</a></button>
+        <button><a href="javaComments.html">Next ❯</a></button>
+        
+    </div>
+    <!-- <div class="lessonA"> 
+        <a href="" >❮ Previous</a>
+        <a href="">Next ❯</a>
+        
+    </div>-->
+</body>
+<script src="script.js"></script>
+</html>

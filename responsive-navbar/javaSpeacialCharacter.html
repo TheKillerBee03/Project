@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <nav>
+        <ul>
+            <div class="menu-button" onclick=showNav()><a style="display: flex; justify-content: flex-start;"><svg xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 96 960 960" width="28"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></div>
+        
+        <ul>
+        <!-- <div onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26" style="fill: white;"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></div> -->
+        <li ><a href="index.html">Home</a></li>
+      <li class="hideOnMobile"><a href="lesson.html">Lesson</a></li>
+      <li class="hideOnMobile"><a href="#">Quiz</a></li>
+      <li class="hideOnMobile"><a href="#">Games</a></li>
+      <li class="hideOnMobile"><a href="#">About</a></li>
+    </ul>
+    </ul>
+    </nav>
+     <div class="sidenav">
+        <div onclick=hideNav() ><a style="padding-left: 5px;"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26" style="fill: white;"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></div>
+        <h2>Java Lesson</h2>
+    <a href="lesson.html">Java HOME</a>
+    <a href="intro.html">Java Intro</a>
+    <a href="getStarted.html">Java Get Started</a>
+    <a href="syntax.html">Java Syntax</a>
+    <a href="outputPrint.html">Java Output</a>
+    <a href="outputPrintNum.html">Java Output/Print</a>
+    <a href="#">Java Comments</a>
+    <a href="#">Java Variables</a>
+    <a href="#">Java Data Types</a>
+    <a href="#">Java Type Casting</a>
+    <a href="#">Java Operators</a>
+    <a href="#">Java Strings</a>
+    <a href="#">Java Math</a>
+    <a href="#">Java Booleans</a>
+    <a href="#">Java If...Else</a>
+    <a href="#">Java Switch</a>
+    <a href="#">Java While Loop</a>
+    <a href="#">Java For Loop</a>
+    <a href="#">Java Break/Continue</a>
+    <a href="#">Java Arrays</a>
+    
+    </div> 
+    <h4 class="lessonh4">Java Special Characters</h4>
+    
+    
+    <div class="cen">
+        <h4 id="h">Strings - Special Characters</h4>
+       <p>Because strings must be written within quotes, Java will misunderstand this string, and generate an error:</p>
+    </div>
+    
+    <div class="cens">
+        
+        <h4 id="e">Example</h4>
+       
+        <div class="centred">
+            <code>
+                
+                <span class="keywordmain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String</span>
+                <span>txt  </span>
+                <span class="keywordbrace">=</span>
+                <span class="keywordprint"> "We are the so-called "<span class="keywordmain">Vikings</span>" from the north.";</span>
+                
+                
+            
+        </code>
+            
+                
+        </div>
+        
+    </div>
+
+    <div class="cens">
+        <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The solution to avoid this problem, is to use the <b>backslash escape character</b>.</h2>
+        
+        <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The backslash ( <code>\</code> ) escape character turns special characters into string characters:</h2>
+        <table class="tables">
+            <tr>
+                <th style="width: 30%;">Escape character</th>
+                <th style="width: 30%;">Result</th>
+                <th style="width: 40%;">Description</th>
+                
+            </tr>
+            <tr>
+                <td class="keywordmain"><code><b>\'</b></code></td>
+                <td>'</td>
+                <td>Single quote</td>
+                
+            </tr>
+            <tr>
+                <td class="keywordmain"><code><b>\"</b></code></td>
+                <td>"</td>
+                <td>Double quote</td>
+                
+            </tr>
+            <tr>
+                <td class="keywordmain"><code><b>\\</b></code></td>
+                <td>\</td>
+                <td>Backslash</td>
+                
+            </tr>
+            
+            
+        </table>
+        <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The sequence <code>\"</code>  inserts a double quote in a string:</h2>
+    </div>
+    
+    <div class="cens">
+        
+        <h4 id="e">Example</h4>
+       
+        <div class="cent">
+            <code>
+                
+                <span class="keywordmain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String</span>
+                <span>txt  </span>
+                <span class="keywordbrace">=</span>
+                <span class="keywordprint"> "We are the so-called \"Vikings"\ from the north.";</span>
+                
+                
+            
+        </code>
+            
+                
+        </div>
+        
+    </div>
+
+    <div class="cens">
+        <h2>The sequence <code>\'</code>  inserts a single quote in a string:</h2>
+    
+    </div>
+
+    <div class="cens">
+        
+        <h4 id="e">Example</h4>
+       
+        <div class="cent">
+            <code>
+                
+                <span class="keywordmain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String</span>
+                <span>txt  </span>
+                <span class="keywordbrace">=</span>
+                <span class="keywordprint"> "It\'s alright.";</span>
+                
+                
+            
+        </code>
+            
+                
+        </div>
+        
+    </div>
+
+    <div class="cens">
+        <h2>The sequence \\  inserts a single backslash in a string:</h2>
+    
+    </div>
+
+    <div class="cens">
+        
+        <h4 id="e">Example</h4>
+       
+        <div class="cent">
+            <code>
+                
+                <span class="keywordmain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String</span>
+                <span>txt  </span>
+                <span class="keywordbrace">=</span>
+                <span class="keywordprint"> "The character \\ is called backslash.";</span>
+                
+                
+            
+        </code>
+            
+                
+        </div>
+        
+    </div>
+
+    <div class="cens">
+        <h2>Other common escape sequences that are valid in Java are:</h2>
+    
+    </div>
+
+    <div class="cens">
+       
+        <table class="tables">
+            <tr>
+                
+                <th style="width: 50%;">Code</th>
+                <th style="width: 50%;">Result</th>
+                
+            </tr>
+            <tr>
+                <td class="keywordmain"><code><b>\n</b></code></td>
+                <td>New Line</td>
+                
+            </tr>
+            <tr>
+                <td class="keywordmain"><code><b>\r</b></code></td>
+                
+                <td>Carriage Return</td>
+                
+            </tr>
+            <tr>
+                <td class="keywordmain"><code><b>\t</b></code></td>
+                
+                <td>Tab</td>
+                
+            </tr>
+            <tr>
+                <td class="keywordmain"><code><b>\b</b></code></td>
+                
+                <td>Backspace</td>
+                
+            </tr>
+            <tr>
+                <td class="keywordmain"><code><b>\f</b></code></td>
+                
+                <td>Form Feed</td>
+                
+            </tr>
+            
+            
+        </table>
+        
+    </div>
+
+
+    
+    <div class="buttun">
+        <button><a href="javaNumber&String.html" >❮ Previous</a></button>
+        <button><a href="javaMath.html">Next ❯</a></button>
+        
+    </div>
+    <!-- <div class="lessonA"> 
+        <a href="" >❮ Previous</a>
+        <a href="">Next ❯</a>
+        
+    </div>-->
+</body>
+<script src="script.js"></script>
+</html>

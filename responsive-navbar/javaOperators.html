@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <nav>
+        <ul>
+            <div class="menu-button" onclick=showNav()><a style="display: flex; justify-content: flex-start;"><svg xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 96 960 960" width="28"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></div>
+        
+        <ul>
+        <!-- <div onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26" style="fill: white;"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></div> -->
+        <li ><a href="index.html">Home</a></li>
+      <li class="hideOnMobile"><a href="lesson.html">Lesson</a></li>
+      <li class="hideOnMobile"><a href="#">Quiz</a></li>
+      <li class="hideOnMobile"><a href="#">Games</a></li>
+      <li class="hideOnMobile"><a href="#">About</a></li>
+    </ul>
+    </ul>
+    </nav>
+     <div class="sidenav">
+        <div onclick=hideNav() ><a style="padding-left: 5px;"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26" style="fill: white;"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></div>
+        <h2>Java Lesson</h2>
+    <a href="lesson.html">Java HOME</a>
+    <a href="intro.html">Java Intro</a>
+    <a href="getStarted.html">Java Get Started</a>
+    <a href="syntax.html">Java Syntax</a>
+    <a href="outputPrint.html">Java Output</a>
+    <a href="outputPrintNum.html">Java Output/Print</a>
+    <a href="#">Java Comments</a>
+    <a href="#">Java Variables</a>
+    <a href="#">Java Data Types</a>
+    <a href="#">Java Type Casting</a>
+    <a href="#">Java Operators</a>
+    <a href="#">Java Strings</a>
+    <a href="#">Java Math</a>
+    <a href="#">Java Booleans</a>
+    <a href="#">Java If...Else</a>
+    <a href="#">Java Switch</a>
+    <a href="#">Java While Loop</a>
+    <a href="#">Java For Loop</a>
+    <a href="#">Java Break/Continue</a>
+    <a href="#">Java Arrays</a>
+    
+    </div> 
+    <h4 class="lessonh4">Java Operators</h4>
+    
+    
+    <div class="cen">
+        <h4 id="h">Java Operators</h4>
+        <p>Operators are used to perform operations on variables and values.</p>
+        <p>In the example below, we use the <code>+</code> <b>operator</b> to add together two values:</p>
+    </div>
+    
+    <div class="cens">
+        
+        <h4 id="e">Example</h4>
+       
+        <div class="cent">
+            <code>
+                
+                <span class="keywordmain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int</span>
+                <span>x  </span>
+                <span class="keywordbrace">=</span>
+                <span class="keywordprint">100 + 50;</span>
+                
+                
+            
+        </code>
+            
+                
+        </div>
+        
+    </div>
+    
+    <div class="cens">
+        <h2>Although the <code>+</code> operator is often used to add together two values, like in the example above, it can also be used to add together a variable and a value, or a variable and another variable:</h2>
+    
+    </div>
+
+    <div class="cens">
+        
+        <h4 id="e">Example</h4>
+       
+        <div class="cent">
+            <code>
+                
+                <span class="keywordpublic2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int</span>
+                <span>sum1  </span>
+                <span class="keywordbrace">=</span>
+                <span class="keywordmain">100 + 50;</span>
+                <span class="keywordpublic2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 150 (100 + 50)</span>
+                <br>
+                <span class="keywordpublic2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int</span>
+                <span>sum2  </span>
+                <span class="keywordbrace">=</span>
+                <span>sum1 + 250;</span>
+                <span class="keywordpublic2">&nbsp;&nbsp;&nbsp;&nbsp;// 400 (150 + 250)</span>
+                <br>
+                <span class="keywordpublic2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int</span>
+                <span>sum3  </span>
+                <span class="keywordbrace">=</span>
+                <span>sum2 + sum2;</span>
+                <span class="keywordpublic2">&nbsp;&nbsp;&nbsp;// 800 (400 + 400)</span>
+                <br>
+            
+        </code>
+        </div>
+        
+    </div>
+
+    <div class="cens">
+        <h2>Java divides the operators into the following groups:</h2>
+        <ul>
+            <li>Arithmetic operators</li>
+            <li>Assignment operators</li>
+            <li>Comparison operators</li>
+            <li>Logical operators</li>
+            <li>Bitwise operators</li>
+        </ul>
+        
+    </div>
+    
+    <div class="cens">
+        <h4 id="h">Arithmetic Operators</h4>
+        <p>Arithmetic operators are used to perform common mathematical operations.</p>
+        
+    </div>
+
+    <div class="cens">
+        
+        <table class="tables">
+            <tr>
+                <th style="width: 20%;">Operator</th>
+                <th style="width: 17%;">Name</th>
+                <th style="width: 50%;">Description</th>
+                <th style="width: 13%;">Example</th>
+            </tr>
+            <tr>
+                <td class="keywordmain"><code><b>+</b></code></td>
+                <td>Addition</td>
+                <td>Adds together two values</td>
+                <td>x + y</td>
+            </tr>
+            <tr>
+                <td class="keywordmain"><code><b>-</b></code></td>
+                <td>Subtraction</td>
+                <td>Subtracts one value from another</td>
+                <td>x - y</td>
+            </tr>
+            <tr>
+                <td class="keywordmain"><code><b>*</b></code></td>
+                <td>Multiplication</td>
+                <td>Multiplies two values</td>
+                <td>x * y</td>
+            </tr>
+            <tr>
+                <td class="keywordmain"><code><b>/</b></code></td>
+                <td>Division</td>
+                <td>Divides one value by another</td>
+                <td>x / y</td>
+            </tr>
+            <tr>
+                <td class="keywordmain"><code><b>%</b></code></td>
+                <td>Modulus</td>
+                <td>Returns the division remainder</td>
+                <td>x % y</td>
+            </tr>
+            <tr>
+                <td class="keywordmain"><code><b>++</b></code></td>
+                <td>Increment</td>
+                <td>Increases the value of a variable by 1</td>
+                <td>++x </td>
+            </tr>
+            <tr>
+                <td class="keywordmain"><code><b>--</b></code></td>
+                <td>Decrement</td>
+                <td>Decreases the value of a variable by 1</td>
+                <td>--x</td>
+            </tr>
+            
+        </table>
+        
+    </div>
+
+    <div class="cens">
+        <h4 id="h">Java Assignment Operators</h4>
+        <p>Assignment operators are used to assign values to variables.</p>
+        <p>In the example below, we use the <b>assignment</b> operator ( <code>=</code> ) to assign the value <b>10</b> to a variable called <b>x</b>:</p>
+    </div>
+
+    <div class="cens">
+        
+        <h4 id="e">Example</h4>
+       
+        <div class="cent">
+            <code>
+                
+                <span class="keywordmain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int</span>
+                <span>x  </span>
+                <span class="keywordbrace">=</span>
+                <span class="keywordprint">100;</span>
+                
+                
+            
+        </code>
+        </div>
+        
+    </div>
+
+    <div class="cens">
+        <h2>The <b>addition assignment</b> operator ( <code>+=</code> ) adds a value to a variable:</h2>
+    </div>
+
+    <div class="cens">
+        
+        <h4 id="e">Example</h4>
+       
+        <div class="cent">
+            <code>
+                
+                <span class="keywordmain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int</span>
+                <span>x  </span>
+                <span class="keywordbrace">=</span>
+                <span class="keywordprint">10;</span>
+                <br>
+                
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x  </span>
+                <span class="keywordbrace">+=</span>
+                <span class="keywordprint">5;</span>
+                <br>
+        </code>
+        </div>
+        
+    </div>
+
+    <div class="cens">
+        <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A list of all assignment operators:</h2>
+        <table class="tables">
+            <tr>
+                <th style="width: 30%;">Operator</th>
+                <th style="width: 30%;">Example</th>
+                <th style="width: 40%;">Same As</th>
+                
+            </tr>
+            <tr>
+                <td class="keywordmain"><code><b>=</b></code></td>
+                <td>x = 5</td>
+                <td>x = 5</td>
+                
+            </tr>
+            <tr>
+                <td class="keywordmain"><code><b>+=</b></code></td>
+                <td>x += 3</td>
+                <td>x = x + 3</td>
+                
+            </tr>
+            <tr>
+                <td class="keywordmain"><code><b>-=</b></code></td>
+                <td>x -= 3</td>
+                <td>x = x - 3</td>
+                
+            </tr>
+            <tr>
+                <td class="keywordmain"><code><b>*=</b></code></td>
+                <td>x *= 3</td>
+                <td>x = x * 3</td>
+                
+            </tr>
+            <tr>
+                <td class="keywordmain"><code><b>/=</b></code></td>
+                <td>x /= 3</td>
+                <td>x = x / 3</td>
+                
+            </tr>
+            <tr>
+                <td class="keywordmain"><code><b>%=</b></code></td>
+                <td>x %= 3</td>
+                <td>x = x % 3</td>
+                
+            </tr>
+            <tr>
+                <td class="keywordmain"><code><b>&=</b></code></td>
+                <td>x &= 3</td>
+                <td>x = x & 3</td>
+               
+            </tr>
+            <tr>
+                <td class="keywordmain"><code><b>|=</b></code></td>
+                <td>x |= 3</td>
+                <td>x = x | 3</td>
+                
+            </tr>
+            <tr>
+                <td class="keywordmain"><code><b>^=</b></code></td>
+                <td>x ^= 3</td>
+                <td>x = x ^ 3</td>
+                
+            </tr>
+            <tr>
+                <td class="keywordmain"><code><b>>>=</b></code></td>
+                <td>x >>= 3</td>
+                <td>x = x >> 3</td>
+                
+            </tr>
+            <tr>
+                <td class="keywordmain"><code><b><<=</b></code></td>
+                <td>x <<= 3</td>
+                <td>x = x << 3</td>
+                
+            </tr>
+            
+        </table>
+    </div>
+
+    <div class="cens">
+        <h4 id="h">Java Comparison Operators</h4>
+        <p>Comparison operators are used to compare two values (or variables). This is important in programming, because it helps us to find answers and make decisions.</p>
+        <p>The return value of a comparison is either <code>true</code> or <code>false</code>. These values are known as Boolean values, and you will learn more about them in the <a href="">Booleans</a> and <a href="">If..Else</a> chapter.</p>
+    </div>
+
+    <div class="cens">
+        
+        <h4 id="e">Example</h4>
+       
+        <div class="cent">
+            <code>
+                
+                <span class="keywordmain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int</span>
+                <span>x  </span>
+                <span class="keywordbrace">=</span>
+                <span class="keywordprint">10;</span>
+                <br>
+                <span class="keywordmain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int</span>
+                <span>y</span>
+                <span class="keywordbrace">=</span>
+                <span class="keywordprint">5;</span>
+                <br>
+                <span class="keywordmain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System</span>.ou.<span class="keywordmain">println</span><span class="keywordbrace">(</span>x > y<span class="keywordbrace">);</span>
+                <span class="keywordpublic2">&nbsp;&nbsp;&nbsp;// returns true, because 5 is higher than 3</span>
+            </code>
+        </div>
+        
+    </div>
+
+    <div class="cens">
+        
+        <table class="tables">
+            <tr>
+                <th style="width: 30%;">Operator</th>
+                <th style="width: 40%;">Name</th>
+                <th style="width: 30%;">Example</th>
+                
+            </tr>
+            <tr>
+                <td class="keywordmain"><code><b>==</b></code></td>
+                <td>Equal to</td>
+                <td>x == y</td>
+                
+            </tr>
+            <tr>
+                <td class="keywordmain"><code><b>!=</b></code></td>
+                <td>Not equal</td>
+                <td>x != y</td>
+                
+            </tr>
+            <tr>
+                <td class="keywordmain"><code><b>></b></code></td>
+                <td>Greater than</td>
+                <td>x > y</td>
+                
+            </tr>
+            <tr>
+                <td class="keywordmain"><code><b><</b></code></td>
+                <td>Less than</td>
+                <td>x < y</td>
+                
+            </tr>
+            <tr>
+                <td class="keywordmain"><code><b>>=</b></code></td>
+                <td>Greater than or equal to</td>
+                <td>x >= y</td>
+                
+            </tr>
+            <tr>
+                <td class="keywordmain"><code><b><=</b></code></td>
+                <td>Less than or equal to</td>
+                <td>x <= y</td>
+                
+            </tr>
+            
+            
+        </table>
+    </div>
+
+    <div class="cens">
+        <h4 id="h">Java Logical Operators</h4>
+        <p>You can also test for <code>true</code> or <code>false</code> values with logical operators.</p>
+        <p>Logical operators are used to determine the logic between variables or values:</p>
+
+        <table class="tables">
+            <tr>
+                <th style="width: 20%;">Operator</th>
+                <th style="width: 20%;">Name</th>
+                <th style="width: 40%;">Description</th>
+                <th style="width: 20%;">Example</th>
+                
+            </tr>
+            <tr>
+                <td class="keywordmain"><code><b>&&</b></code></td>
+                <td>Logical and</td>
+                <td>Returns true if both statements are true</td>
+                <td>x < 5 &&  x < 10</td>
+            </tr>
+            <tr>
+                <td class="keywordmain"><code><b>||</b></code></td>
+                <td>Logical or</td>
+                <td>Returns true if one of the statements is true</td>
+                <td>x < 5 || x < 4</td>
+            </tr>
+            <tr>
+                <td class="keywordmain"><code><b>!</b></code></td>
+                <td>Logical not</td>
+                <td>Reverse the result, returns false if the result is true</td>
+                <td>!(x < 5 && x < 10)</td>
+            </tr>
+            
+            
+            
+        </table>
+    </div>
+
+    <div class="buttun">
+        <button><a href="javaTypeCasting.html" >❮ Previous</a></button>
+        <button><a href="javaString.html">Next ❯</a></button>
+        
+    </div>
+    <!-- <div class="lessonA"> 
+        <a href="" >❮ Previous</a>
+        <a href="">Next ❯</a>
+        
+    </div>-->
+</body>
+<script src="script.js"></script>
+</html>

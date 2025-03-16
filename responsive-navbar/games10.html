@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filling the blank games</title>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  
+  background: url('b8.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+  overflow: scroll;
+
+  color: #333;
+}
+.keywordpublic{
+    color: lightblue;
+  }
+  .keywordpublic2{
+    color: lightblue;
+  }
+  .keywordmain{
+    color: red;
+  }
+  .keywordbrace{
+    color: gray;
+  }
+  .keywordprint{
+    color: lightgreen;
+  }
+ 
+  .s{
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    color: black;
+    border: 2px solid aquamarine;
+    letter-spacing: 3px;
+  }
+  .s .droppable{
+    border: 1px solid aqua;
+    width: 80px;
+    height: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .draggableContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 1px solid aqua;
+    margin: 10px;
+    
+}
+.box{
+  margin: 10px;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.box:hover{
+  color: aqua;
+}
+.correct{
+    color: green;
+}
+.wrong{
+  color: red;
+}
+.board {
+  position: absolute;
+  top: 23%;
+  left: 0;
+  line-height: 20px;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 2px solid #1976d2;
+  border-radius: 80px;
+  width: 180px;
+  text-align: center;
+  color: #333;
+}
+code{
+  color: white;
+  line-height: 40px;
+  margin: 20px;
+}
+h2{
+  font-style: italic;
+  color: white;
+  text-align: center;
+}
+button{
+    margin: 10px;
+}
+button a{
+    text-decoration: none;
+    padding: 10px;
+    
+}
+
+.pa{
+  background-color: #E7E9EB;
+  padding: 5px 15px 5px 15px;
+  
+  border-radius: 10px;
+  text-align: start;
+
+}
+
+
+    </style>
+</head>
+<body class="body">
+            
+
+    
+        <h2>Java Fill The Blank</h2>
+        <br>
+        <p class="pa"><b style="color: black;">Direction:</b>Choose the correct answer from the box below. Drag your answer to the correct corresponding object</p>
+
+
+
+        <div class="draggableContainer">
+          <span class="box" draggable="true" id="box4">static</span>
+          <span class="box" draggable="true" id="box2">import</span>
+          <span class="box" draggable="true" id="box3">Student</span>
+          <span class="box" draggable="true" id="box1">numbers</span>
+          <span class="box" draggable="true" id="box5">sum</span>
+          <span class="box" draggable="true" id="box6">int</span>
+          <span class="box" draggable="true" id="box7">=</span>
+          <span class="box" draggable="true" id="box8">num</span>
+          <span class="box" draggable="true" id="box5">sum</span>
+          <span class="box" draggable="true" id="box9">println</span>
+      </div>
+
+
+    <div class="s">
+      <code>
+      <span class="droppable" data-draggable-id="box2">1.&nbsp;</span>
+      <span>java.</span><span >util.</span><span >Scanner;</span>
+      
+      <br>
+      <span class="keywordpublic">public</span>
+      <span class="keywordpublic">class</span>
+      <span class="droppable" data-draggable-id="box3">2.&nbsp;</span>
+      <span class="keywordbrace"> { </span>
+      <br>
+      <span class="keywordpublic2"> &nbsp;&nbsp;&nbsp;public</span>
+      <span class="droppable" data-draggable-id="box4">3.&nbsp;</span>
+      
+      <!-- <div class="drop-target" data-correct="dog"><p>dog</p></div> -->
+      <span class="keywordpublic">void</span>
+      <span class="keywordmain">main</span>
+      <span class="keywordbrace"> ( </span>
+      <span class="keywordmain">String</span>
+      <span class="keywordbrace"> [] </span>
+      args
+      <span class="keywordbrace"> ) </span>
+      <span class="keywordbrace"> { </span>
+      <br>
+      <span class="keywordpublic">&nbsp;&nbsp;&nbsp;int</span>
+      <span>[ ]</span>
+      <span class="droppable" data-draggable-id="box1">4.&nbsp;</span>
+      <span class="keywordbrace"> = </span>
+      <span> {320, 100, 32, 89, 7, 69, 120}; </span>
+      <br>
+      <span class="keywordpublic">&nbsp;&nbsp;&nbsp;int</span>
+      <span class="droppable" data-draggable-id="box5">5.&nbsp;</span>
+      <span class="keywordbrace"> = </span>
+      <span > 0; </span>
+      <br>
+      <br>
+      <span class="keywordmain">&nbsp;&nbsp;&nbsp;for</span><span class="keywordbrace">( </span>
+      </span><span class="droppable" data-draggable-id="box6">6.&nbsp;</span>
+      <span > num:</span><span >numbers </span>
+      <span class="keywordbrace">) </span>
+      <span class="keywordbrace"> { </span>
+      <br>
+      <span class="keywordpublic">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sum</span>
+      <span class="droppable" data-draggable-id="box7">7.&nbsp;</span>
+      <span class="keywordpublic">sum</span>
+      +
+      <span class="droppable" data-draggable-id="box8">8.&nbsp;</span>
+      ;
+      <br>
+      <span class="keywordbrace">&nbsp;&nbsp;&nbsp; } </span>
+      <br>
+      <span class="keywordpublic2"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System</span>.out.<span class="droppable" data-draggable-id="box9">9.&nbsp;</span><span class="keywordbrace">( </span>
+      <span class="keywordprint">"The Sum is:"</span>
+      +
+      <span class="droppable" data-draggable-id="box5">10.&nbsp;</span>
+      <span class="keywordbrace"> )</span><span class="keywordbrace">; </span>
+      <br>
+        </code>
+        </div> 
+        <div class="board">Remarks:<p id="remarks"></p>
+            TotalScore:<p id="scores"></p>
+           
+            </div>
+            <div>
+            <button><a href="gamesLevelPage.html">Back</a></button>
+            <button><a href="">Retry</a></button>
+            
+        </div>
+</body>
+<script >
+    //store the reference  ...box ... droppable
+const draggableElement = document.querySelectorAll('.box');
+const droppableElement = document.querySelectorAll('.droppable');
+let score = 0;
+//DRAG START
+draggableElement.forEach(element=>{
+    
+    element.addEventListener('dragstart', (drgStart)=>{
+        drgStart.dataTransfer.setData('text', drgStart.target.id);
+        //apply the css draggableFormat       ---CSS CLASS---
+        drgStart.currentTarget.classList.add('draggableFormat');
+        //console.log('dragstart event is activated!');
+       // console.log(drgStart); //to check if data transfer is working
+
+    });//end of dragstart    
+});
+
+
+//DROP EVENT
+droppableElement.forEach(element=>{
+    element.addEventListener('drop', drpEvt=>{
+        drpEvt.preventDefault();
+        const droppedElementId = drpEvt.dataTransfer.getData('text'); //BOX1
+        const dropZoneId = drpEvt.target.getAttribute('data-draggable-id');
+        const draggableElement = document.getElementById(droppedElementId);
+
+        drpEvt.target.appendChild(document.getElementById(droppedElementId));
+        //drpEvt.target.appendChild(draggableElement.cloneNode(true));
+        //console.log(dropZoneId);
+        if(droppedElementId===dropZoneId){
+            //console.log('Right');
+            element.classList.add('correct');
+            // document.getElementById('correct').innerText = "";
+            score+=1;
+            document.getElementById('remarks').innerText = "Correct!";
+            document.getElementById('scores').innerText = score;
+        }else{
+            //console.log('Wrong');
+            element.classList.add('wrong');
+            document.getElementById('remarks').innerText = "Wrong!";
+        }//end of if else
+
+    });//end of add eventListener
+
+    //DRAG OVER
+    element.addEventListener('dragover', (drgOverEvt)=>{
+        drgOverEvt.preventDefault();
+    });//end of drag over
+});
+
+//DRAG END
+draggableElement.forEach(element=>{
+    element.addEventListener('dragend', drgendEvt=>{
+        //drgendEvt.currentTarget.classList.remove('draggableFormat');
+    });
+});
+</script>
+</html>

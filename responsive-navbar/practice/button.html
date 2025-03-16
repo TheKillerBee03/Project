@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            background-color: black;
+            color: lightblue;
+            padding: 50px;
+            clip-path: polygon(23% 31%, 77% 31%, 100% 50%, 77% 70%, 23% 70%, 0% 50%);
+            cursor: pointer;
+            margin-left: 30px;
+        }
+        .buttons{
+            flex-direction: column;
+            position: relative;
+            left: 18%;
+            
+        }
+        .buttonss{
+            flex-direction: row;
+            display: none;
+            
+            
+        }
+        .text{
+            background-color: khaki;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            flex-direction: row;
+            width: 100px;
+            text-decoration: none;
+        }
+        ul{
+           text-decoration: none; 
+        }
+        #main{
+            display: none;
+            width: 100px;
+        }
+        #main2{
+            display: none;
+            
+        }
+        .nd{
+            flex-direction: column;
+            position: relative;
+            left: 18%;
+            width: 100px;
+            text-decoration: none;
+        }
+        .nd2{
+            
+            position: relative;
+            left: 35%;
+            top: 0;
+            width: 100px;
+            text-decoration: none;
+        }
+        ul li a{
+            margin: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="buttons">
+        
+        <button onclick="hideShow2()">2nd Quarter</button>
+        <button>3rd Quarter</button>
+        <button>4th Quarter</button>
+    </div>
+    
+    <div class="nd" id="main">
+        <ul  >
+            <li class="text"> <a   href="">afasdfadf </a></li>
+            <li class="text"> <a   href="">afasdfadf </a></li>
+            <li class="text"> <a   href="">afasdfadf </a></li>
+       </ul>
+    </div>
+       
+    <div class="nd2" id="main2">
+        <span class="text"> <a   href="">afasdfadf </a></span>
+        <span class="text"> <a   href="">afasdfadf </a></span>
+    </div>
+    
+        <!-- <ul class="nd2" id="main2">
+            <li class="text"> <a   href="">afasdfadf </a></li>
+            <li class="text"> <a   href="">afasdfadf </a></li>
+            <li class="text"> <a   href="">afasdfadf </a></li>
+       </ul> -->
+    
+    
+        <!-- <ul class="nd2" id="main2">
+             <li class="text"> <a   href="">afasdfadf </a></li>
+             <li class="text"> <a   href="">afasdfadf </a></li>
+             <li class="text"> <a   href="">afasdfadf </a></li>
+        </ul> -->
+     
+    
+</body>
+<script>
+    var div = document.getElementById('main');
+    var display = 0;
+
+    function hideShow(){
+        if(display == 0){
+            
+            div.style.display = 'block';
+           
+            display = 1;
+        }else{
+            div.style.display = 'none';
+            display = 0;
+        }
+    }
+
+    var div2 = document.getElementById('main2');
+    var display2 = 0;
+
+    function hideShow2(){
+        if(display2 == 0){
+            
+            div2.style.display = 'block';
+           
+            display2 = 1;
+        }else{
+            div2.style.display = 'none';
+            display2 = 0;
+        }
+    }
+
+</script>
+</html>

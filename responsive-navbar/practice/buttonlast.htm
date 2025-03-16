@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.box {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    
+}
+
+.dropdown {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background: #7f0099;
+    color: #fff;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.dropdown .left-icon,
+.dropdown .right-icon {
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    
+    width: 15px;
+    height: 5px;
+    background: #fff;
+    border-radius: 40px;
+    transition: .5s;
+    
+}
+
+.dropdown .left-icon {
+    left: 7px;
+    transform: rotate(45deg);
+}
+
+.dropdown.active .left-icon {
+    transform: rotate(135deg);
+}
+
+.dropdown .right-icon {
+    transform: rotate(-45deg);
+}
+
+.dropdown.active .right-icon {
+    transform: rotate(-135deg);
+}
+
+.dropdown .items {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 160px;
+    margin-top: 63px;
+    overflow: hidden;
+    visibility: hidden;
+    transition: .5s;
+}
+
+.dropdown.active .items {
+    visibility: visible;
+}
+
+.dropdown .items a {
+    position: relative;
+    left: 100%;
+    display: flex;
+    font-size: 20px;
+    background: #fff;
+    color: #7f0099;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-top: 2.5px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+    transition-delay: calc(60ms * var(--i));
+}
+
+.dropdown.active .items a {
+    left: 0;
+}
+
+.dropdown .items a:hover {
+    color: #fff;
+}
+
+.dropdown .items a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #bb00e0;
+    z-index: -1;
+    border-radius: inherit;
+    transform: rotate(160deg);
+    transform-origin: right;
+    transition: .5s;
+}
+
+.dropdown .items a:hover span {
+    transform: rotate(0deg);
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #d5d0d6;
+}
+button{
+            background-color: black;
+            color: lightblue;
+            padding: 50px;
+            clip-path: polygon(23% 31%, 77% 31%, 100% 50%, 77% 70%, 23% 70%, 0% 50%);
+            cursor: pointer;
+            margin-left: 30px;
+        }
+        
+        #main{
+            display: none;
+            width: 100px;
+        }
+        .nd{
+            
+            
+            width: 100px;
+            text-decoration: none;
+        }
+        .nd a{
+            position: relative;
+    left: 100%;
+    display: flex;
+    font-size: 20px;
+    background: #fff;
+    color: #7f0099;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-top: 2.5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="dropdown">Dropdown
+            <span class="left-icon"></span>
+            <span class="right-icon"></span>
+            <div class="items">
+                <a href="#" style="--i:1;"><span></span>HTML</a>
+                <a href="#" style="--i:2;"><span></span>CSS</a>
+                <a href="#" style="--i:3;"><span></span>JavaScript</a>
+            </div>
+        </div>
+    </div>
+    <div class="buttons"><button onclick="hideShow()"> 1st Quarter &#x25BE;
+        <div class="nd" id="main">
+            <a href="">jksdhfkdahskj</a>
+        </div>
+    </button>
+    </div>
+</body>
+<script>
+    const dropdown = document.querySelector('.dropdown');
+
+dropdown.addEventListener('click', () => {
+dropdown.classList.toggle('active');
+});
+const dropdown2 = document.querySelector('.main');
+
+dropdown2.addEventListener('click', () => {
+dropdown2.classList.toggle('active');
+});
+
+// var div = document.getElementById('main');
+//     var display = 0;
+
+//     function hideShow(){
+//         if(display == 0){
+            
+//             div.style.display = 'block';
+           
+//             display = 1;
+//         }else{
+//             div.style.display = 'none';
+//             display = 0;
+//         }
+//     }
+</script>
+</html>

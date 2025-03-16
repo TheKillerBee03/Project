@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <nav>
+        <ul>
+            <div class="menu-button" onclick=showNav()><a style="display: flex; justify-content: flex-start;"><svg xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 96 960 960" width="28"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></div>
+        
+        <ul>
+        <!-- <div onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26" style="fill: white;"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></div> -->
+        <li ><a href="index.html">Home</a></li>
+      <li class="hideOnMobile"><a href="lesson.html">Lesson</a></li>
+      <li class="hideOnMobile"><a href="#">Quiz</a></li>
+      <li class="hideOnMobile"><a href="#">Games</a></li>
+      <li class="hideOnMobile"><a href="#">About</a></li>
+    </ul>
+    </ul>
+    </nav>
+     <div class="sidenav">
+        <div onclick=hideNav() ><a style="padding-left: 5px;"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26" style="fill: white;"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></div>
+        <h2>Java Lesson</h2>
+    <a href="lesson.html">Java HOME</a>
+    <a href="intro.html">Java Intro</a>
+    <a href="getStarted.html">Java Get Started</a>
+    <a href="syntax.html">Java Syntax</a>
+    <a href="outputPrint.html">Java Output</a>
+    <a href="outputPrintNum.html">Java Output/Print</a>
+    <a href="#">Java Comments</a>
+    <a href="#">Java Variables</a>
+    <a href="#">Java Data Types</a>
+    <a href="#">Java Type Casting</a>
+    <a href="#">Java Operators</a>
+    <a href="#">Java Strings</a>
+    <a href="#">Java Math</a>
+    <a href="#">Java Booleans</a>
+    <a href="#">Java If...Else</a>
+    <a href="#">Java Switch</a>
+    <a href="#">Java While Loop</a>
+    <a href="#">Java For Loop</a>
+    <a href="#">Java Break/Continue</a>
+    <a href="#">Java Arrays</a>
+    
+    </div> 
+    <h4 class="lessonh4">Java Strings</h4>
+    
+    
+    <div class="cen">
+        <h4 id="h">Java Strings</h4>
+        <p>Strings are used for storing text.</p>
+        <p>A <code>String</code> variable contains a collection of characters surrounded by double quotes:</p>
+    </div>
+    
+    <div class="cens">
+        
+        <h4 id="e">Example</h4>
+        <h4 id="j">Create a variable of type String and assign it a value:</h4>
+        <div class="cent">
+            <code>
+                
+                <span class="keywordmain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String</span>
+                <span>greeting   </span>
+                <span class="keywordbrace">=</span>
+                <span class="keywordprint">"Hello"</span>;
+                
+                
+            
+        </code>
+            
+                
+        </div>
+        
+    </div>
+
+    <div class="cens">
+        <h4 id="h">String Length</h4>
+        <p>A String in Java is actually an object, which contain methods that can perform certain operations on strings. For example, the length of a string can be found with the <code>length()</code> method:</p>
+        
+    </div>
+
+    <div class="cens">
+        
+        <h4 id="e">Example</h4>
+        
+        <div class="cent">
+            <code>
+                
+                <span class="keywordmain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String</span>
+                <span>txt   </span>
+                <span class="keywordbrace">=</span>
+                <span class="keywordprint">"ABCDEFGHIJKLMNOPQRSTUVWXYZ"</span>;
+                <br>
+                <br>
+                <span class="keywordmain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System</span>.ou.<span class="keywordmain">println</span><span class="keywordbrace">(</span><span class="keywordprint">"The length of the txt string is: " +</span>
+                txt.<span class="keywordmain">length()</span><span class="keywordbrace">);</span>
+            
+        </code>
+            
+                
+        </div>
+        
+    </div>
+
+
+    <div class="cens">
+        <h4 id="h">More String Methods</h4>
+        <p>There are many string methods available, for example <code>toUpperCase()</code> and <code>toLowerCase()</code>:</p>
+        
+    </div>
+
+    <div class="cens">
+        
+        <h4 id="e">Example</h4>
+        
+        <div class="cent">
+            <code>
+                
+                <span class="keywordmain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String</span>
+                <span>txt   </span>
+                <span class="keywordbrace">=</span>
+                <span class="keywordprint">"Hello World"</span>;
+                <br>
+                <br>
+                <span class="keywordmain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System</span>.ou.<span class="keywordmain">println</span><span class="keywordbrace">(</span>
+                txt.<span class="keywordmain">toUpperCase()</span><span class="keywordbrace">);</span>
+                <span class="keywordpublic2">// Outputs "HELLO WORLD"</span>
+                <br>
+                <span class="keywordmain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System</span>.ou.<span class="keywordmain">println</span><span class="keywordbrace">(</span>
+                txt.<span class="keywordmain">toLowerCase()</span><span class="keywordbrace">);</span>
+                <span class="keywordpublic2">// Outputs "hello world"</span>
+            
+        </code>
+            
+                
+        </div>
+        
+    </div>
+
+    <div class="cens">
+        <h4 id="h">Finding a Character in a String</h4>
+        <p>The <code>indexOf()</code> method returns the <b>index</b> (the position) of the first occurrence of a specified text in a string (including whitespace):</p>
+        
+    </div>
+
+    <div class="cens">
+        
+        <h4 id="e">Example</h4>
+        
+        <div class="cent">
+            <code>
+                
+                <span class="keywordmain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String</span>
+                <span>txt   </span>
+                <span class="keywordbrace">=</span>
+                <span class="keywordprint">"Please locate where 'locate' occurs!"</span>;
+                <br>
+                <br>
+                <span class="keywordmain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System</span>.ou.<span class="keywordmain">println</span><span class="keywordbrace">(</span>
+                txt.<span class="keywordmain">indexOf()</span><span class="keywordbrace">(</span><span class="keywordprint">"locate"</span><span class="keywordbrace">)</span><span class="keywordbrace">);</span>
+                <span class="keywordpublic2">// Outputs 7</span> 
+                
+        </code>
+            
+                
+        </div>
+        
+    </div>
+
+    <div class="cens">
+        <h2>Java counts positions from zero.</h2>
+        <h2>0 is the first position in a string, 1 is the second, 2 is the third ...</h2>
+    </div>
+
+    <div class="cens">
+        <h4 id="h">Complete String Reference</h4>
+        <p>For a complete reference of String methods, go to our <a href="">Java String Methods Reference</a>.</p>
+        <p>The reference contains descriptions and examples of all string methods.</p>
+    </div>
+
+    
+    <div class="buttun">
+        <button><a href="javaOperators.html" >❮ Previous</a></button>
+        <button><a href="javaStringConcatenation.html">Next ❯</a></button>
+        
+    </div>
+    <!-- <div class="lessonA"> 
+        <a href="" >❮ Previous</a>
+        <a href="">Next ❯</a>
+        
+    </div>-->
+</body>
+<script src="script.js"></script>
+</html>

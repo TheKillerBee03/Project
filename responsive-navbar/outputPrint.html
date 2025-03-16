@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <nav>
+        <ul>
+            <div class="menu-button" onclick=showNav()><a style="display: flex; justify-content: flex-start;"><svg xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 96 960 960" width="28"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></div>
+        
+        <ul>
+        <!-- <div onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26" style="fill: white;"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></div> -->
+        <li ><a href="index.html">Home</a></li>
+      <li class="hideOnMobile"><a href="lesson.html">Lesson</a></li>
+      <li class="hideOnMobile"><a href="#">Quiz</a></li>
+      <li class="hideOnMobile"><a href="#">Games</a></li>
+      <li class="hideOnMobile"><a href="#">About</a></li>
+    </ul>
+    </ul>
+    </nav>
+     <div class="sidenav">
+        <div onclick=hideNav() ><a style="padding-left: 5px;"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26" style="fill: white;"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></div>
+        <h2>Java Lesson</h2>
+    <a href="lesson.html">Java HOME</a>
+    <a href="intro.html">Java Intro</a>
+    <a href="getStarted.html">Java Get Started</a>
+    <a href="syntax.html">Java Syntax</a>
+    <a href="outputPrint.html">Java Output Text</a>
+    <a href="outputPrintNum.html">Java Output Number</a>
+    <a href="javaComments.html">Java Comments</a>
+    <a href="javaVariable.html">Java Variables</a>
+    <a href="javaPrintVariables.html">Java Print Variables</a>
+    <a href="javaMultipleVariables.html">Java Multiple Variables</a>
+    <a href="javaIdentifiers.html">Java Identifiers Variables</a>
+    <a href="javaRealLife.html">Java RealLife Variables</a>
+    <a href="javaDataTypes.html">Java Data Types</a>
+    <a href="javaNumber.html">Java Numbers Data Types</a>
+    <a href="javaBoolean.html">Java Boolean Type Types</a>
+    <a href="javaDataTypes.html">Java Data Types</a>
+    <a href="#">Java Type Casting</a>
+    <a href="#">Java Operators</a>
+    <a href="#">Java Strings</a>
+    <a href="#">Java Math</a>
+    <a href="#">Java Booleans</a>
+    <a href="#">Java If...Else</a>
+    <a href="#">Java Switch</a>
+    <a href="#">Java While Loop</a>
+    <a href="#">Java For Loop</a>
+    <a href="#">Java Break/Continue</a>
+    <a href="#">Java Arrays</a>
+    
+    </div> 
+    <h4 class="lessonh4">Java Output / Print</h4>
+    
+    
+    <div class="cen">
+        <h4 id="h">Print Text</h4>
+        <p>You learned from the previous chapter that you can use the <code>println()</code> method to output values or print text in Java:</p>
+        
+        
+    </div>
+    
+    <div class="cens">
+        <h4 id="e">Example</h4>
+        <div class="cent">
+            <code>
+                
+           
+            <span class="keywordpublic2"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System</span>.out.<span class="keywordmain">println</span><span class="keywordbrace">( </span>
+            <span class="keywordprint">"Hello World"</span>
+            <span class="keywordbrace"> )</span><span class="keywordbrace">; </span>
+            
+            
+        </code>
+            
+                
+        </div>
+    </div>
+
+    <div class="cens">
+        
+        <h2>You can add as many <code>println()</code> methods as you want. Note that it will add a new line for each method:</h2>
+    </div>
+
+    <div class="cens">
+        <h4 id="i">Example</h4>
+        <div class="cent">
+            <code>
+                
+           
+            <span class="keywordpublic2"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System</span>.out.<span class="keywordmain">println</span><span class="keywordbrace">( </span>
+            <span class="keywordprint">"Hello World"</span>
+            <span class="keywordbrace"> )</span><span class="keywordbrace">; </span>
+            <br>
+            <span class="keywordpublic2"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System</span>.out.<span class="keywordmain">println</span><span class="keywordbrace">( </span>
+            <span class="keywordprint">"I'm Learning a Java."</span>
+            <span class="keywordbrace"> )</span><span class="keywordbrace">; </span>
+            <br>
+            <span class="keywordpublic2"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System</span>.out.<span class="keywordmain">println</span><span class="keywordbrace">( </span>
+            <span class="keywordprint">"It is awesome"</span>
+            <span class="keywordbrace"> )</span><span class="keywordbrace">; </span>
+        </code>
+            
+                
+        </div>
+    </div>
+
+
+    
+
+    <div class="cens">
+        <h4 id="m">Double Quotes</h4>
+        <p>Text must be wrapped inside double quotations marks <code>""</code>.</p>
+        <p>If you forget the double quotes, an error occurs:</p>
+    </div>
+
+    <div class="cens">
+        
+        <div class="cent">
+            <code>
+                
+                <span class="keywordpublic2"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System</span>.out.<span class="keywordmain">println</span><span class="keywordbrace">( </span>
+                <span class="keywordprint">"This sentence will work"</span>
+                <span class="keywordbrace"> )</span><span class="keywordbrace">; </span>
+            
+        </code>
+            
+                
+        </div>
+        <div class="centred">
+            <code>
+                
+                <span class="keywordpublic2"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System</span>.out.<span class="keywordmain">println</span><span class="keywordbrace">(</span>
+                <span class="keywordprint"><code style="color: red;">This</code> sentence will will produce an error</span>
+                <span class="keywordbrace"> )</span><span class="keywordbrace">; </span>
+            
+        </code>
+            
+                
+        </div>
+    </div>
+
+    <div class="cens">
+        <h4 id="m">The Print() Method</h4>
+        <p>There is also a print() method, which is similar to <code>println()</code>.</p>
+        <p>The only difference is that it does not insert a new line at the end of the output:</p>
+    </div>
+
+    <div class="cens">
+        <h4 id="i">Example</h4>
+        <div class="cent">
+            <code>
+                
+           
+            <span class="keywordpublic2"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System</span>.out.<span class="keywordmain">println</span><span class="keywordbrace">( </span>
+            <span class="keywordprint">"Hello World"</span>
+            <span class="keywordbrace"> )</span><span class="keywordbrace">; </span>
+            <br>
+            <span class="keywordpublic2"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System</span>.out.<span class="keywordmain">println</span><span class="keywordbrace">( </span>
+            <span class="keywordprint">"I will print on the same line."</span>
+            <span class="keywordbrace"> )</span><span class="keywordbrace">; </span>
+            
+        </code>
+            
+                
+        </div>
+    </div>
+
+
+    <div class="cens">
+        
+        <h2>Note that we add an extra space (after "Hello World!" in the example above) for better readability.</h2>
+    </div>
+
+    <div class="cens">
+        
+        <h2>In this tutorial, we will only use <code>println()</code> as it makes the code output easier to read.</h2>
+    </div>
+
+    
+    <div class="buttun">
+        <button><a href="syntax.html" >❮ Previous</a></button>
+        <button><a href="outputPrintNum.html">Next ❯</a></button>
+        
+    </div>
+    <!-- <div class="lessonA"> 
+        <a href="" >❮ Previous</a>
+        <a href="">Next ❯</a>
+        
+    </div>-->
+</body>
+<script src="script.js"></script>
+</html>
